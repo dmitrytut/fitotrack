@@ -1,0 +1,31 @@
+﻿
+<!-- JQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/Vendor/JQuery/jquery-1.11.1.min.js"><\/script>')</script>
+<!--[if lt IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/Vendor/JQuery/jquery-2.1.1.min.js"><\/script>')</script>
+<!--<![endif]-->
+@*<script type="text/javascript">
+    if ("ontouchend" in document) document.write("<script src='/Vendor/JQuery/jquery.mobile-1.4.2.min.js'><\/script>");
+</script>*@
+
+<!--Bootstrap-->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>window.jQuery.fn.modal || document.write('<script src="/Vendor/bootstrap-3.3.0/js/bootstrap.min.js"><\/script>')</script>
+<!-- Bootstrap CSS local fallback -->
+<script>
+    window.jQuery(document).ready(function () {
+        var bodyColor = window.jQuery('body').css('color');
+        if (bodyColor != 'rgb(51, 51, 51)') {
+            window.jQuery("head").prepend('<link rel="stylesheet" href="/Vendor/bootstrap-3.3.0/css/bootstrap.min.css">');
+        }
+    });
+</script>
+
+<!--jquery.cookie-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>window.jQuery.cookie || document.write('<script src="/Vendor/jquery.cookie-1.4.1/jquery.cookie.min.js"><\/script>')</script>
+
+<!--Common scripts-->
+<script src="~/Scripts/Common/common.js"></script>

@@ -1,0 +1,92 @@
+﻿<div data-ng-cloak="">
+    <div class="page-header position-relative">
+        <h1>
+            @SharedRes.SharedStrings.PRODUCTS_STR
+            <small>
+                <i class="icon-double-angle-right"></i>
+                @SharedRes.SharedStrings.SEARCH_STR
+            </small>
+        </h1>
+    </div>
+    <!--/.page-header-->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    <form class="form-search" data-ng-submit="FoodSearch()">
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <div class="input-group">
+
+                                    @*TODO Searching on Enter key*@
+
+                                    <input type="text" class="form-control search-query" 
+                                        placeholder="@MealRes.MealStrings.SEARCH_PRODUCT_PLACEHOLDER_STR"
+                                        data-typeahead="suggestion for suggestion in Autocomplete($viewValue) | filter:$viewValue"
+                                        data-typeahead-wait-ms="100"
+                                        data-typeahead-on-select="FoodSearch()"
+                                        data-ng-model="Model.query">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-purple btn-sm" 
+                                            data-ng-disabled="Model.isBusy || Model.query.length===0">
+                                            @SharedRes.SharedStrings.SEARCH_STR
+                                            <i class="icon-search icon-on-right bigger-110"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--/.span-->
+            </div>
+            <div>
+                <div>
+                    <div class="col-xs-7">
+                        <div class="search-results">
+                            <div>
+
+                                </div>
+                            <div data-ng-show="SearchResShow()">
+                                Total: {{Model.results.total_results}}
+@*                                <div class="btn-group">
+                                    <button data-ng-repeat="ps in Internal.pageSizes"
+                                        type="button" 
+                                        class="btn btn-xs" 
+                                        data-ng-model="Model.pageSize" 
+                                        data-btn-radio="ps"
+                                        data-ng-click="FoodSearch()">{{ps}}</button>
+                                </div>*@
+                                <div data-ng-repeat="food in Model.results.food">
+                                    <h4><a data-ng-href='/Main/#!/food/view/{{food.food_id}}'
+                                        data-target='_blank'
+                                        data-ng-bind-html="food.food_name"></a></h4>
+                                    <div data-ng-show="food.brand_name">
+                                        <a data-ng-href='/Main/#!/food/search/{{food.brand_name}}'
+                                            data-target='_blank'
+                                            data-ng-bind-html="food.brand_name"></a>
+                                    </div>
+                                    <small>{{food.food_description}}</small>
+                                </div>
+                                <div>
+                                    <pager total-items="Model.results.total_results" items-per-page="Model.pageSize" page="Model.pageNum+1" on-select-page="ChangePage(page)"></pager>
+                                </div>
+                            </div>
+                            <div id="loading" data-ng-show='Model.isBusy'>
+                                <div>
+                                    @SharedRes.SharedStrings.LOADING_STR
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                    </div>
+                </div>
+                <!--/.row-fluid-->
+                <div class="row" data-ng-show="Model.isNothing">
+                    @SharedRes.SharedStrings.SEARCH_NOTHING_FOUND_STR
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿<div data-ng-if="isGoalExists()">
+    <ft-goal-progress data-goal-type="goalInfo.goalType"
+                      data-start-weight="goalInfo.startWeight"
+                      data-goal-weight="goalInfo.goalWeight"
+                      data-current-weight="currentWeight"></ft-goal-progress>
+    <div class="clr"></div>
+    <div class="item-row">
+        <div class="text-label">Weight</div>
+        <div class="value">{{currentWeight}}<span>kg</span></div>
+    </div>
+    @*<div class="clr"></div>
+        <div class="item-row">
+            <div class="text-label">Weight</div>
+            <div class="value">{{currentWeight}}<span>kg</span></div>
+        </div>*@
+    <div class="clr"></div>
+    <div class="item-row">
+        <div class="text-label">Goal</div>
+        <div class="value">{{goalInfo.goalWeight}}<span>kg</span></div>
+    </div>
+    <div class="half-hor-spacer"></div>
+    <a href data-ui-sref="profile.goals.create({return:true})">Change goal</a>
+</div>
+<div data-ng-if="!isGoalExists()">
+    <div class="item-row">
+    </div>
+    <div class="item-row">
+        <div>
+            <a data-ui-sref="profile.goals.create({return:true})" class="btn btn-primary btn-lg" style="vertical-align: middle;">Create New Goal</a>
+        </div>
+    </div>
+</div>

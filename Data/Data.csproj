@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1B7174B-3871-4F20-8F26-9DEB5BA953B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Data</RootNamespace>
+    <AssemblyName>Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.2.0.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.2\lib\net45\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.2\lib\net45\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="FitotrackContext.cs" />
+    <Compile Include="Migrations\201502161243204_FoodAndExerciseDeleteCreateUserRequired2.cs" />
+    <Compile Include="Migrations\201502161243204_FoodAndExerciseDeleteCreateUserRequired2.Designer.cs">
+      <DependentUpon>201502161243204_FoodAndExerciseDeleteCreateUserRequired2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502161254545_FoodDeleteCreateUserRequired.cs" />
+    <Compile Include="Migrations\201502161254545_FoodDeleteCreateUserRequired.Designer.cs">
+      <DependentUpon>201502161254545_FoodDeleteCreateUserRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502161325475_FoodCascadeDeleteFalse.cs" />
+    <Compile Include="Migrations\201502161325475_FoodCascadeDeleteFalse.Designer.cs">
+      <DependentUpon>201502161325475_FoodCascadeDeleteFalse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502161335291_FoodCascadeDeleteTrue.cs" />
+    <Compile Include="Migrations\201502161335291_FoodCascadeDeleteTrue.Designer.cs">
+      <DependentUpon>201502161335291_FoodCascadeDeleteTrue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502161540395_FoodCreateUserIdSetToNullable.cs" />
+    <Compile Include="Migrations\201502161540395_FoodCreateUserIdSetToNullable.Designer.cs">
+      <DependentUpon>201502161540395_FoodCreateUserIdSetToNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502161615202_FoodCreateUserIdSetToNullable2.cs" />
+    <Compile Include="Migrations\201502161615202_FoodCreateUserIdSetToNullable2.Designer.cs">
+      <DependentUpon>201502161615202_FoodCreateUserIdSetToNullable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502171735150_EditLogTable.cs" />
+    <Compile Include="Migrations\201502171735150_EditLogTable.Designer.cs">
+      <DependentUpon>201502171735150_EditLogTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502260821267_LogUserIdDeleteMigration.cs" />
+    <Compile Include="Migrations\201502260821267_LogUserIdDeleteMigration.Designer.cs">
+      <DependentUpon>201502260821267_LogUserIdDeleteMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{eeee02ce-5139-4a5f-bcb3-0adf5af22d29}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201502161243204_FoodAndExerciseDeleteCreateUserRequired2.resx">
+      <DependentUpon>201502161243204_FoodAndExerciseDeleteCreateUserRequired2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502161254545_FoodDeleteCreateUserRequired.resx">
+      <DependentUpon>201502161254545_FoodDeleteCreateUserRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502161325475_FoodCascadeDeleteFalse.resx">
+      <DependentUpon>201502161325475_FoodCascadeDeleteFalse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502161335291_FoodCascadeDeleteTrue.resx">
+      <DependentUpon>201502161335291_FoodCascadeDeleteTrue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502161540395_FoodCreateUserIdSetToNullable.resx">
+      <DependentUpon>201502161540395_FoodCreateUserIdSetToNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502161615202_FoodCreateUserIdSetToNullable2.resx">
+      <DependentUpon>201502161615202_FoodCreateUserIdSetToNullable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502171735150_EditLogTable.resx">
+      <DependentUpon>201502171735150_EditLogTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502260821267_LogUserIdDeleteMigration.resx">
+      <DependentUpon>201502260821267_LogUserIdDeleteMigration.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

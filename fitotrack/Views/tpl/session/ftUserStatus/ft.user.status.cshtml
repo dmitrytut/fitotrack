@@ -1,0 +1,27 @@
+﻿<div class="details">
+    <div data-ng-if="Internal.isEditMode">
+        <div id="_fus_e_m">
+            <input type="text" id="_fus_e_m_status"
+                   data-ng-model="Internal.tempStatus"
+                   data-ft-on-press-enter="SetEditMode(false)"
+                   data-ft-on-press-esc="CancelEditMode()"
+                   data-ft-blur="CancelEditMode()"
+                   data-ft-blur-ignore="_fus_e_m_ok_btn" />
+            <button id="_fus_e_m_ok_btn" class="btn btn-primary" 
+                    data-ng-click="SetEditMode(false)">
+                <i class="glyphicon glyphicon-ok"></i>
+            </button>
+        </div>
+    </div>
+    <div data-ng-if="!Internal.isEditMode">
+        <div id="_fus_n_m" 
+             data-ng-click="SetEditMode(true)">
+            <div data-ng-if="isStatusSet()">
+                {{ngModel}}
+            </div>
+            <div data-ng-if="!isStatusSet()">
+                {{Internal.appCfg.noUserStatus}}
+            </div>
+        </div>
+    </div>
+</div>

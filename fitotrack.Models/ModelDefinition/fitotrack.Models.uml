@@ -1,0 +1,1304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="d4bc2b4b-8097-4ab7-8974-c59081326b67"
+  name="fitotrack.Models" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="286e49cb-2ded-4f2a-9684-c6919127485e"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="56694afd-db99-4e16-91df-3b4e1246f206"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c301fd4b-bdfb-4a98-98cc-18e2472d2a66"
+              LastKnownName="Register"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b25c5db-23a1-43bb-957e-91570da3c37d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d2dd116-3831-4e9e-a346-1c419daa9563"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="84777523-bea6-4ace-a8c2-b92bb59cf685"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Register as Trainer"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9d9404bf-ecb3-4e26-808f-0b881e7e286d"
+              LastKnownName="Register as Trainer"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="acd7c77e-7b17-400c-9778-b97893b23127"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="820d7bd6-ba21-40bb-a276-32b9993ce1f4"
+                  name="Register as Trainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="31271826-d901-45e5-842b-cf401022cada"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Register as Fitness Club"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="942b9bb5-6ee8-4859-b3ef-cc98bb0b8403"
+              LastKnownName="Register as Fitness Club"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="975da5e8-85de-46da-867a-06e548e1d638"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="12d726a0-2365-405b-bfab-256219a996e6"
+                  name="Register as Fitness Club"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e16f5471-6940-491e-80ea-445f94e2d7e9"
+        name="Registered User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="16b76349-69b3-48f8-a81a-0d034c25617f"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Search for Trainers"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="eb132676-8769-4463-8ebd-bf9b4cc3fe95"
+              LastKnownName="Search for Trainers"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="adc1847e-7cbe-4f1c-a2ee-c690372586ce"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="899b3444-4bbb-4abd-a46c-f71c87ac7ad3"
+                  name="Search for Trainers"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="131de0f9-bef1-4199-a0aa-d96c184e066c"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Search for Events"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="55d4f7e9-cd71-40b8-97d8-ada83b21d741"
+              LastKnownName="Search for Events"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e2008be-2273-4f60-8f90-d47f293930a4"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b160a1a-425c-4066-855a-28d8c88dea20"
+                  name="Search for Events"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bbb00e7e-9e17-4c82-ab50-733794d2f2ae"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Track Consumed Food in Food Diary"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d360ebdc-8f2d-4561-8e4d-4062e732f463"
+              LastKnownName="Track Consumed Food in Food Diary"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ccafdca-bbd4-452e-a1ac-c9999bddf101"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="19d4e836-5869-426e-9437-92659ba3259d"
+                  name="Track Consumed Food in Food Diary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8d53ae77-39ab-43a2-a50d-8b6ca9cd5492"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Plan Food program in Food Diary"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5dc4ff2b-754b-49e1-b72a-64e7454d52ad"
+              LastKnownName="Plan Food program in Food Diary"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f758ee4-f3e9-4796-8876-f5694868959e"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da7ae2ca-ddf3-41f7-b9cc-f7aeda20315b"
+                  name="Plan Food program in Food Diary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2b5cb672-75c3-4d13-bdde-346031b85289"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Track Completed Exercises in Workout Diary"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4a32b639-db63-41b0-8e31-5dfe6ac2cd98"
+              LastKnownName="Track Completed Exercises in Workout Diary"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3fe0357c-6990-4c03-bdbe-85f270546fc2"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="48227ccd-dba5-4e21-8343-d3a6dcc5f11f"
+                  name="Track Completed Exercises in Workout Diary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3d10938d-6a51-45f1-96a6-0f85f694cc8e"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Plan Workout program in Workout Diary"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8501919a-c5cc-4e50-8553-c270d26968af"
+              LastKnownName="Plan Workout program in Workout Diary"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9db77ac-17e2-4679-9c00-8b5e7cdf2552"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6fa15b4e-162a-445d-ba38-1a8d2dd92d73"
+                  name="Plan Workout program in Workout Diary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="593529b8-b353-431d-8e51-7827efb997ae"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Create Goal"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7dcc66b8-882d-4351-a468-6382116af845"
+              LastKnownName="Create Goal"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7fae55c-7c53-4555-b3a0-9e048510eed5"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fbba6af-8ffd-41ea-9b6f-76efa462c833"
+                  name="Create Goal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4313fbad-eff5-489b-9178-f214ff63e809"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="View Transaction History"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8f6f9dc7-0689-4ea1-b815-fe397c567db8"
+              LastKnownName="View Transaction History"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d65f7ae-4a34-4526-a1d7-e9a7959a2065"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87cd8e37-518e-4a1a-8461-6882601a2fa6"
+                  name="View Transaction History"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4060a30f-74f5-4c89-9b88-50e93e593f47"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Subscribe on trainer's program"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6280b89c-0767-4383-98cf-54085cd4baa6"
+              LastKnownName="Subscribe on trainer's program"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b2a49fa-4142-4e1e-9d72-877a73d8a8f7"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec31939e-1865-4eb8-95c1-60ec03d5df4e"
+                  name="Subscribe on trainer's program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0a65e9d5-2616-4df3-9574-aee7dbba56ab"
+            isDerived="false"
+            sourceEndRoleName="Registered User"
+            targetEndRoleName="Search for fitness clubs"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="60261548-4d64-4c6e-8cf2-3b25d6267ab3"
+              LastKnownName="Search for fitness clubs"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="923ec62c-cc40-4cab-9cbf-4f82824a451b"
+                  name="Registered User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31e54bc9-48fc-4ef7-996b-037b62ac0153"
+                  name="Search for fitness clubs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="92d6273f-4bff-46f2-91c7-c4ef720be919"
+        name="Trainer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="69954b94-8371-478a-adca-7cb19f86c74d"
+            isDerived="false"
+            sourceEndRoleName="Trainer"
+            targetEndRoleName="Manage User "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="846cf574-38a2-4504-9032-56f7a5ae0ef7"
+              LastKnownName="Manage User "
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1975bfe5-d41b-4715-a30c-ed81ea5f3966"
+                  name="Trainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="700e251e-edb8-4a8d-9315-5d540121e729"
+                  name="Manage User "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="48942f8a-a9e2-44bb-ac9d-fd812e02ea73"
+            isDerived="false"
+            sourceEndRoleName="Trainer"
+            targetEndRoleName="Schedule sessions"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4da2a1a5-143f-4ed1-bc14-126fa8023b27"
+              LastKnownName="Schedule sessions"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c208e463-7fd1-4b55-b789-62baef789574"
+                  name="Trainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7da933d9-0ec0-4a97-bc76-f478b96b0345"
+                  name="Schedule sessions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2cc639a7-29b4-4582-aba6-6597d579ad13"
+            isDerived="false"
+            sourceEndRoleName="Trainer"
+            targetEndRoleName="Create Event"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6db959db-30c4-4538-ad90-cb524fc484d1"
+              LastKnownName="Create an Event"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="610d72d2-6446-4eda-9c63-f580058d04a1"
+                  name="Trainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efab0600-7a90-4117-868d-ba935c3e2fff"
+                  name="Create Event"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b96dc54f-02dc-4f2d-acd1-60e55d0cf082"
+            isDerived="false"
+            sourceEndRoleName="Trainer"
+            targetEndRoleName="Create workout program"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="32e57450-d703-42ae-8284-b382f191acb7"
+              LastKnownName="Create workout program"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4cb8304b-7221-42ba-b3a6-566b7214e34e"
+                  name="Trainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="24043956-30b2-4b2c-9af2-6a5739473d60"
+                  name="Create workout program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="700729d7-8ec1-4d06-9f65-8b44b48743fc"
+            isDerived="false"
+            sourceEndRoleName="Trainer"
+            targetEndRoleName="View Transaction History"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7e3b3edf-56de-455b-bd49-ec3a8f60c1fa"
+              LastKnownName="View Transaction History"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db6e2e7a-79eb-4031-aa3e-c8a56bae2d70"
+                  name="Trainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c1f5b01-f9e3-4f2b-81ec-0d0d48b931d0"
+                  name="View Transaction History"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9b99dcfd-315c-48a8-a29d-020ae3717276"
+        name="Fitness Club"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="dee8c39f-1389-4726-8bce-7254dfc13b6a"
+            isDerived="false"
+            sourceEndRoleName="Fitness Club"
+            targetEndRoleName="Create Event1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8c9d1699-e695-4fc2-bfb1-bc208c1c2337"
+              LastKnownName="Create an Event"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="32dfd77f-572e-4731-9700-b665995185b9"
+                  name="Fitness Club"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e71a3025-06fb-4ef3-9270-10db21cffe02"
+                  name="Create Event1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="29995a87-310c-4988-928f-b4e8eb0c004a"
+            isDerived="false"
+            sourceEndRoleName="Fitness Club"
+            targetEndRoleName="Send newsletter"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5d950faf-cfb8-4ac8-98d0-b6428bfa9bba"
+              LastKnownName="Send a newsletter"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db40ae82-51db-4953-a623-c0585e6e6d6e"
+                  name="Fitness Club"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df760350-59fc-4fbf-9b30-345021bf836c"
+                  name="Send newsletter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2856c018-ac63-4a47-aa5b-2a37266dc1d7"
+            isDerived="false"
+            sourceEndRoleName="Fitness Club"
+            targetEndRoleName="View Transaction History1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d8376282-9da5-417e-b7c6-4ab680d3e277"
+              LastKnownName="View Transaction History"
+              LastKnownLocation="fitotrack.Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ecd037e6-6e64-42d8-9121-6e58b8dc825b"
+                  name="Fitness Club"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10acd9dc-1717-4352-a39f-97153484fcf3"
+                  name="View Transaction History1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e373701a-0306-464c-be61-fa22f2a8d71a"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c301fd4b-bdfb-4a98-98cc-18e2472d2a66"
+        name="Register"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9d9404bf-ecb3-4e26-808f-0b881e7e286d"
+        name="Register as Trainer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="942b9bb5-6ee8-4859-b3ef-cc98bb0b8403"
+        name="Register as Fitness Club"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5fce8baf-43bd-437e-be55-237925056129"
+        name="Analyst"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="55d4f7e9-cd71-40b8-97d8-ada83b21d741"
+        name="Search for Events"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="81fb7455-c85c-4c6a-8230-01911e5389b8">
+            <useCaseMoniker
+              Id="8ac55f51-1bbd-4461-87d8-70c5eb3d738d"
+              LastKnownName="View Event Details"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="09d8e251-b803-42a3-a410-89510f0d74f1"
+        name="Book Trainer Session"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5f612b49-440c-49c4-95d8-3545e9d84d5a">
+            <useCaseMoniker
+              Id="9e2c5a0f-aa22-4096-ac9a-3e5b5343b748"
+              LastKnownName="Pay for Session Booking"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+          <include
+            Id="4b9eca0d-b1ad-4a19-b804-b25868885083">
+            <useCaseMoniker
+              Id="a2847a88-1cf3-4449-8a45-93acf79a344b"
+              LastKnownName="Payment"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9e2c5a0f-aa22-4096-ac9a-3e5b5343b748"
+        name="Pay for Session Booking"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eb132676-8769-4463-8ebd-bf9b4cc3fe95"
+        name="Search for Trainers"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5f39d413-f9e3-49ea-9fa3-e9eb4722a065">
+            <useCaseMoniker
+              Id="32561243-6809-4a53-a5a0-6267eb6a22a1"
+              LastKnownName="View Trainer Details"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="32561243-6809-4a53-a5a0-6267eb6a22a1"
+        name="View Trainer Details"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="426506a5-80ac-4a3d-b8bf-33be4022ab91">
+            <useCaseMoniker
+              Id="09d8e251-b803-42a3-a410-89510f0d74f1"
+              LastKnownName="Book Trainer Session"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+          <include
+            Id="71db22df-cd57-44be-a307-32f2ad66ba2d">
+            <useCaseMoniker
+              Id="ee657a0a-1090-491d-9dba-2b0cb0fb9734"
+              LastKnownName="Chat with Trainer"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8ac55f51-1bbd-4461-87d8-70c5eb3d738d"
+        name="View Event Details"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="9de82e3c-fb9d-4362-a2d5-54fdcd00843d">
+            <useCaseMoniker
+              Id="2a6eab4a-d58d-402e-948d-df95301f5a2d"
+              LastKnownName="Book an Event"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a6eab4a-d58d-402e-948d-df95301f5a2d"
+        name="Book an Event"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e2a87692-eb3f-4751-a234-ad20ad6a60da">
+            <useCaseMoniker
+              Id="a2847a88-1cf3-4449-8a45-93acf79a344b"
+              LastKnownName="Payment"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a2847a88-1cf3-4449-8a45-93acf79a344b"
+        name="Payment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ee657a0a-1090-491d-9dba-2b0cb0fb9734"
+        name="Chat with Trainer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8f6f9dc7-0689-4ea1-b815-fe397c567db8"
+        name="View Transaction History"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d360ebdc-8f2d-4561-8e4d-4062e732f463"
+        name="Track Consumed Food in Food Diary"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5dc4ff2b-754b-49e1-b72a-64e7454d52ad"
+        name="Plan Food program in Food Diary"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4a32b639-db63-41b0-8e31-5dfe6ac2cd98"
+        name="Track Completed Exercises in Workout Diary"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8501919a-c5cc-4e50-8553-c270d26968af"
+        name="Plan Workout program in Workout Diary"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7dcc66b8-882d-4351-a468-6382116af845"
+        name="Create Goal"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="846cf574-38a2-4504-9032-56f7a5ae0ef7"
+        name="Manage User "
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b0d410d1-d7db-4482-bc2b-e3c60d7c59c0">
+            <useCaseMoniker
+              Id="8501919a-c5cc-4e50-8553-c270d26968af"
+              LastKnownName="Plan Workout program in Workout Diary"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+          <include
+            Id="449372fe-d527-4aa0-a0c1-f2271c776dd7">
+            <useCaseMoniker
+              Id="5dc4ff2b-754b-49e1-b72a-64e7454d52ad"
+              LastKnownName="Plan Food program in Food Diary"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+          <include
+            Id="18cad754-2f0a-4754-a792-37363fad2391">
+            <useCaseMoniker
+              Id="7dcc66b8-882d-4351-a468-6382116af845"
+              LastKnownName="Create Goal"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+          <include
+            Id="3d2bcbfb-2ce2-4fb9-988f-1d0cc628e07e">
+            <useCaseMoniker
+              Id="ee657a0a-1090-491d-9dba-2b0cb0fb9734"
+              LastKnownName="Chat with Trainer"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6280b89c-0767-4383-98cf-54085cd4baa6"
+        name="Subscribe on trainer's program"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1ca49060-35ee-4519-858c-3cfac2c7403c">
+            <useCaseMoniker
+              Id="a2847a88-1cf3-4449-8a45-93acf79a344b"
+              LastKnownName="Payment"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4da2a1a5-143f-4ed1-bc14-126fa8023b27"
+        name="Schedule sessions"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ed00744-81b8-405a-874a-94fdc3dc74ee"
+        name="Schedule events"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6db959db-30c4-4538-ad90-cb524fc484d1"
+        name="Create an Event"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4a8f96cb-f093-4bfa-8fa4-4e9b317bc6b8">
+            <useCaseMoniker
+              Id="a2847a88-1cf3-4449-8a45-93acf79a344b"
+              LastKnownName="Payment"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="32e57450-d703-42ae-8284-b382f191acb7"
+        name="Create workout program"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1efed730-c799-4971-9ff5-c1f27848627a">
+            <useCaseMoniker
+              Id="63128fb4-f10d-4c40-a841-5d85acc4f822"
+              LastKnownName="Publish Workout Program as commercial"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="63128fb4-f10d-4c40-a841-5d85acc4f822"
+        name="Publish Workout Program as commercial"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7e3b3edf-56de-455b-bd49-ec3a8f60c1fa"
+        name="View Transaction History"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c9d1699-e695-4fc2-bfb1-bc208c1c2337"
+        name="Create an Event"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="23ccb596-edce-46a2-b56d-9caa09e33f08">
+            <useCaseMoniker
+              Id="a2847a88-1cf3-4449-8a45-93acf79a344b"
+              LastKnownName="Payment"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5d950faf-cfb8-4ac8-98d0-b6428bfa9bba"
+        name="Send a newsletter"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="60261548-4d64-4c6e-8cf2-3b25d6267ab3"
+        name="Search for fitness clubs"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4590e3c4-d7bd-4aea-a21a-11ab0d318096">
+            <useCaseMoniker
+              Id="2a88104b-1b50-43b7-a2fd-8655146766a6"
+              LastKnownName="View Fitness Club Details"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e990c0f6-5c59-4265-ab8d-7b3242df52b2"
+        name="Subscribe on fitness newsletter"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a88104b-1b50-43b7-a2fd-8655146766a6"
+        name="View Fitness Club Details"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="22603725-1c52-449a-b9cd-3e7ccb34ce62">
+            <useCaseMoniker
+              Id="e990c0f6-5c59-4265-ab8d-7b3242df52b2"
+              LastKnownName="Subscribe on fitness newsletter"
+              LastKnownLocation="fitotrack.Models.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d8376282-9da5-417e-b7c6-4ab680d3e277"
+        name="View Transaction History"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

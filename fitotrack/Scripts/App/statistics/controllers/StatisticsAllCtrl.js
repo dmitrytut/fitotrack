@@ -1,0 +1,63 @@
+﻿
+/**
+ * @fileOverview
+ * DashboardCtrl.js
+ * Controller for App Statistics.
+ */
+
+(function (ng, app) {
+    'use strict';
+
+    app.controller('statistics.all.Ctrl',
+        [
+            '_',
+            'moment',
+            '$scope',
+            '$rootScope',
+            '$state',
+            '$stateParams',
+            'appCfg',
+            'appService',
+            'utilsService',
+            '$interval',
+            function (_, moment, $scope, $rootScope, $state, $stateParams, appCfg, appSvc, utils, $interval) {
+
+                // Internal variables.
+                $scope.Internal = {
+                    state: $scope.$parent.Public.states.all,
+                    chosenPeriod: {}
+                };
+
+                // Init controller.
+                $scope.AllInit = function () {
+                    // Get parent chosenPeriod as initial period.
+                    ng.extend($scope.Internal.chosenPeriod, $scope.$parent.Public.chosenPeriod);
+                };
+                $scope.AllInit();
+
+                $scope.$on('ftStatsChosenPeriodChanged', function (event, stateId, newChosenPeriod) {
+                    console.log("All reported: Parent chosenPeriod is changed and it is...");
+                    if (stateId === $scope.Internal.state.id) {
+                        if (!utils.isUndefinedOrNull(newChosenPeriod) &&
+                            !utils.isUndefinedOrNull(newChosenPeriod.startDate) &&
+                            !utils.isUndefinedOrNull(newChosenPeriod.endDate) &&
+                            newChosenPeriod.startDate.isValid() &&
+                            newChosenPeriod.endDate.isValid()) {
+                            if (!newChosenPeriod.startDate.isSame($scope.Internal.chosenPeriod.startDate) || 
+                                !newChosenPeriod.endDate.isSame($scope.Internal.chosenPeriod.endDate)) {
+                                console.log("Not equal to internal! See yourself:");
+                                console.log(newChosenPeriod);
+                                $scope.Internal.chosenPeriod = newChosenPeriod;
+                            }
+                            else {
+                                console.log("Equal to the internal!");
+                            }
+                        }
+                    }
+                    else {
+                        console.log("Ohh it's not me...");
+                    }
+                }, true)
+            }
+        ]);
+})(angular, fitotrack);

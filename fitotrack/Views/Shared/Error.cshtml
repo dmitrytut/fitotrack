@@ -1,0 +1,97 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    var httpEx = new HttpException(null, Model.Exception);
+    var errorCode = httpEx.GetHttpCode();
+    ViewBag.Title = "Error " + errorCode + "!!!";
+    string errorMessage;
+    switch (errorCode)
+    {
+        case 400: 
+            errorMessage = "Bad Request";
+            break;
+        case 401: 
+            errorMessage = "Unauthorized";
+            break;
+        case 402:
+            errorMessage = "Payment Required";
+            break;
+        case 403:
+            errorMessage = "Forbidden";
+            break;
+        case 404:
+            errorMessage = "Not Found";
+            break;
+        case 405:
+            errorMessage = "Method Not Allowed";
+            break;
+        case 406:
+            errorMessage = "Not Acceptable";
+            break;
+        case 407:
+            errorMessage = "Proxy Authentication Required";
+            break;
+        case 408:
+            errorMessage = "Request Timeout";
+            break;
+        case 409:
+            errorMessage = "Conflict";
+            break;
+        case 410:
+            errorMessage = "Gone";
+            break;
+        case 411:
+            errorMessage = "Length Required";
+            break;
+        case 412:
+            errorMessage = "Precondition Failed";
+            break;
+        case 413:
+            errorMessage = "Request Entity Too Large";
+            break;
+        case 414:
+            errorMessage = "Request-URI Too Long";
+            break;
+        case 415:
+            errorMessage = "Unsupported Media Type";
+            break;
+        case 416:
+            errorMessage = "Requested Range Not Satisfiable";
+            break;
+        case 417:
+            errorMessage = "Expectation Failed";
+            break;
+        case 500:
+            errorMessage = "Internal Server Error";
+            break;
+        case 501:
+            errorMessage = "Not Implemented";
+            break;
+        case 502:
+            errorMessage = "Bad Gateway";
+            break;
+        case 503:
+            errorMessage = "Service Unavailable";
+            break;
+        case 504:
+            errorMessage = "Gateway Timeout";
+            break;
+        case 505:
+            errorMessage = "HTTP Version Not Supported";
+            break;
+        default:
+            errorMessage = "Unknown Error";
+            break;
+    }
+    ViewBag.Title = "Error " + errorCode + "(" + errorMessage + ")" + "!!!";
+    errorMessage += ".";
+}
+<p>
+    <img src="//www.google.com/images/errors/robot.png"/>
+    <b>@errorCode</b>
+    <ins>That's an error.</ins>
+</p>
+<p>
+    @errorMessage
+    <ins>That's all we know.</ins>
+</p>

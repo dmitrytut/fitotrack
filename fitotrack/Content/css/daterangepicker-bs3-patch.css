@@ -1,0 +1,88 @@
+/*!
+ * Patched stylesheet for the Date Range Picker.
+ */
+
+/* Set another font*/
+.daterangepicker .calendar th, .daterangepicker .calendar td {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+    /* Set weekday color */
+    .daterangepicker .calendar th.weekend {
+        color: #ff9898;
+    }
+
+    .daterangepicker .calendar td.available.weekend {
+        color: #f05656;
+    }
+
+        .daterangepicker .calendar td.available.weekend.off {
+            opacity: 0.5;
+        }
+
+            .daterangepicker .calendar td.available.weekend.off.in-range {
+                opacity: 1;
+            }
+
+    .daterangepicker .calendar td.disabled.off {
+        opacity: 0.5;
+    }
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #27AADE;
+    border-color: #3071a9;
+    color: #fff;
+}
+
+/* Set arrows behaviour */
+.daterangepicker .calendar th .arrow-left {
+    content: url('../img/small-arrow-left.png');
+    display: block;
+    float: left;
+    margin-left: 2px;
+}
+
+.daterangepicker .calendar th .arrow-right {
+    content: url('../img/small-arrow-right.png');
+    display: block;
+    float: left;
+    margin-left: 9px;
+}
+
+.daterangepicker th.available:hover {
+    background: transparent;
+}
+
+.daterangepicker .calendar th.prev:hover .arrow-left {
+    content: url('../img/small-arrow-left-hover.png');
+}
+
+.daterangepicker .calendar th.next:hover .arrow-right {
+    content: url('../img/small-arrow-right-hover.png');
+}
+
+/* Set ranges li elements */
+.daterangepicker .ranges li {
+    background: #f9fbfb;
+    border: 1px solid #e5eaea;
+    color: #1d414b;
+}
+
+    .daterangepicker .ranges li.active, .daterangepicker .ranges li:hover {
+        background: #27AADE;
+        border: 1px solid #27AADE;
+        color: #fff;
+    }
+
+
+/* Center buttons in the range div */
+.daterangepicker .ranges .range_inputs {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Disable range inputs */
+.daterangepicker .daterangepicker_start_input,
+.daterangepicker .daterangepicker_end_input {
+    display: none;
+}

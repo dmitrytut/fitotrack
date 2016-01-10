@@ -1,0 +1,30 @@
+﻿
+<div class="ft-workout-diary-entry">
+    <div class="exercise-block" data-ng-class="{ 'expanded': Internal.isExpanded }">
+        <div class="exercise-item" data-ng-click="ToggleExpanded()">
+            <div class="expand-arrow"></div>
+            <div data-ng-class="{
+                 'run-icon':diaryEntry.exercise.type == Internal.exerciseTypes.Cardio,
+                 'heavy-icon':diaryEntry.exercise.type == Internal.exerciseTypes.Strength,
+                 'game-icon':diaryEntry.exercise.type == Internal.exerciseTypes.Game}">
+            </div>
+            <div class="normal-state">
+                <div class="exercise-name">{{diaryEntry.exercise.title}}</div>
+                <div class="exercise-details">
+                    {{SummaryStr()}}
+                </div>
+                <div class="buttons-pane">
+                    <div class="delete-btn" data-ng-click="DeleteEntry($event)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="expand-state">
+            <div class="row">
+                <div class="add-set col-xs-2" data-ng-click="AddNewSet()" data-ng-show="IsAddSetShow()">Add Set</div>
+            </div>
+            <div data-ng-repeat="set in diaryEntry.sets track by $index">
+                <ft-exercise-set data-set="set" data-set-index="{{$index+1}}" data-exercise-type="{{diaryEntry.exercise.type}}"></ft-exercise-set>
+            </div>
+        </div>
+    </div>
+</div>

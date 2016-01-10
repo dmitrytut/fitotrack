@@ -1,0 +1,234 @@
+﻿<div class="container" data-ng-cloak>
+
+    <div class="row">
+        <div class="col-xs-7">
+            <div class="panel panel-default main-information-panel">
+                <div class="top-pane">
+                    <div class="arrow-left" data-ng-click="DayBefore()"></div>
+                    <div class="arrow-right" data-ng-click="DayAfter()"></div>
+                    <span class="day">{{ShowDateParts('weekDay')}}</span>
+                    <span class="date">{{ShowDateParts('monthDay')}}</span>
+                    <span class="month">{{ShowDateParts('monthTitle')}}</span>
+                </div>
+                <div class="bottom-pane">
+                    <table cellpadding="0" cellspacing="0" width="100%" class="data-table">
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                            <th>Fat</th>
+                            <th>Carbohydrates</th>
+                        </tr>
+                        <tr>
+                            <td class="td-label">Planned</td>
+                            <td class="planned">{{Model.plannedNInfo.kcal}}</td>
+                            <td class="planned">{{Model.plannedNInfo.protein}}</td>
+                            <td class="planned">{{Model.plannedNInfo.fat}}</td>
+                            <td class="planned">{{Model.plannedNInfo.carb}}</td>
+                        </tr>
+                        <tr>
+                            <td class="td-label">Consumed</td>
+                            <td class="consumed">{{Model.totalNInfo.kcal}}</td>
+                            <td class="consumed">{{Model.totalNInfo.protein}}</td>
+                            <td class="consumed">{{Model.totalNInfo.fat}}</td>
+                            <td class="consumed">{{Model.totalNInfo.carb}}</td>
+                        </tr>
+                        <tr>
+                            <td class="td-label">Rest</td>
+                            <td class="rest" data-ng-class="{'red':Model.remainingNInfo.kcal<0,'green':Model.remainingNInfo.kcal>=0}">{{Model.remainingNInfo.kcal}}</td>
+                            <td class="rest" data-ng-class="{'red':Model.remainingNInfo.protein<0,'green':Model.remainingNInfo.protein>=0}">{{Model.remainingNInfo.protein}}</td>
+                            <td class="rest" data-ng-class="{'red':Model.remainingNInfo.fat<0,'green':Model.remainingNInfo.fat>=0}">{{Model.remainingNInfo.fat}}</td>
+                            <td class="rest" data-ng-class="{'red':Model.remainingNInfo.carb<0,'green':Model.remainingNInfo.carb>=0}">{{Model.remainingNInfo.carb}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-5">
+            <ft-calendar selected="Model.date" is-timestamp="true"></ft-calendar>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-xs-12">
+
+            <h3>Meal's Plan</h3>
+
+            <div class="panel panel-default meals-list">
+                <div class="panel-heading"
+                     data-ng-repeat-start="(mtKey, mt) in Model.MEALTIMES | orderObjectBy:'index'">{{mt.title}}</div>
+                <div class="panel-body"
+                     data-ng-class="{'add-new-meal':mt.addingMode}"
+                     data-ng-repeat-end>
+
+                    <div class="add-new-meal-pane">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <div class="row" style="margin-top: 5px">
+                                    <form class="row-search" data-ng-submit="FoodSearch()">
+                                        <div class="col-xs-10">
+                                            <input type="text"
+                                                   class="form-control search-input"
+                                                   placeholder="Food Name"
+                                                   data-typeahead="suggestion for suggestion in Autocomplete($viewValue) | filter:$viewValue | limitTo:10"
+                                                   data-typeahead-wait-ms="100"
+                                                   data-typeahead-on-select="FoodSearch()"
+                                                   data-ng-model="Model.search.query" />
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <button type="submit"
+                                                    class="btn btn-secondary"
+                                                    data-ng-disabled="Model.isBusy">
+                                                <img src="~/Content/img/white-magnifier.png" />
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <button type="button"
+                                                    class="btn btn-default"
+                                                    data-ng-click="ToggleFoodAddingMode(mt.index)">
+                                                <img src="~/Content/img/white-cross.png" />
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="founded-items scroll-list"
+                                     data-ng-show="SearchResShow()">
+                                    <div data-ng-repeat="s_food in Model.search.results.food">
+                                        <div class="item"
+                                             data-ng-hide="IsSearchResSelected(s_food.food_id)"
+                                             data-ng-click="SelectFood(s_food.food_id)">
+                                            {{s_food.food_name}} <span data-ng-show="s_food.brand_name.length>0"><small>({{s_food.brand_name}})</small></span>
+                                        </div>
+                                        <div class="item" data-ng-show="IsSearchResSelected(s_food.food_id)">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    {{s_food.food_name}} <span data-ng-show="s_food.brand_name.length>0"><small>({{s_food.brand_name}})</small></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <form name="foodSearchResForm"
+                                                      data-ng-submit="AddDiaryEntry(mt.index)"
+                                                      novalidate>
+                                                    <div style="display:none" data-ng-init="setForm('foodSearchResForm', foodSearchResForm);"></div>
+                                                    <div class="col-xs-3 form-group" data-show-errors>
+                                                        <input name="_m_fd_sr_qty" type="text" class="form-control"
+                                                               placeholder="qty"
+                                                               data-ng-model="Internal.foodQty"
+                                                               ft-positive-float-validator
+                                                               required />
+                                                    </div>
+                                                    <div class="col-xs-7 form-group" data-show-errors>
+                                                        <select name="_m_fd_sr_serving" class="form-control"
+                                                                data-ng-model="Model.food.currentServing"
+                                                                data-ng-options="serving as serving.serving_description for serving in Model.food.food.servings.serving"
+                                                                required />
+                                                    </div>
+                                                    <div class="col-xs-2">
+                                                        <button type="submit"
+                                                                class="btn btn-primary">
+                                                            <i class="glyphicon glyphicon-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="founded-items scroll-list"
+                                     data-ng-show="Model.search.isNothing">
+                                    <div class="item-not-found">
+                                        @SharedRes.SharedStrings.SEARCH_NOTHING_FOUND_STR
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <tabset class="tabs-left" justified="false">
+                                    <tab>
+                                        <tab-heading>
+                                            <span class="small"><i class="glyphicon glyphicon-time"></i> Most Recent Meals</span>
+                                        </tab-heading>
+                                        <div class="most-eaten-box">
+                                            <div class="scroll-list">
+                                                <div class="item" data-ng-repeat="mpf in Model.mostPopularFood">
+                                                    {{mpf.food_name}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tab>
+                                    <tab>
+                                        <tab-heading>
+                                            <span class="small"><i class="glyphicon glyphicon-star"></i> Most Popular Meals</span>
+                                        </tab-heading>
+                                        <div class="most-eaten-box">
+                                            <div class="scroll-list">
+                                                <div class="item" data-ng-repeat="mpf in Model.mostPopularFood">
+                                                    {{mpf.food_name}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tab>
+                                </tabset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-item"
+                         data-ng-controller="meal.food.DiaryEntryCtrl"
+                         @*| orderBy:'isCompleted':true*@
+                         data-ng-repeat="entry in Model.DiaryEntries | filter:mealTimeFilter(mt.index)">
+                        <div class="normal-state" data-ng-hide="isEditMode">
+                            <div class="check-btn"
+                                 data-ng-class="{'checked':entry.isCompleted}"
+                                 data-ng-click="ToggleIsCompleted(entry);"></div>
+                            <div class="meal-name">{{entry.food.food_name}} <span>({{entry.foodQty}}x{{entry.selectedServing.serving_description}}) - {{entry.foodQty*entry.selectedServing.calories}} kcal</span></div>
+                            <div class="buttons-pane">
+                                <div class="edit-btn" data-ng-click="EditModeOn(entry)"></div>
+                                <div class="delete-btn" data-ng-click="DeleteDiaryEntry(entry)"></div>
+                            </div>
+                        </div>
+                        <div data-ng-show="isEditMode">
+                            <div class="row">
+                                <form name="foodDiaryEntryForm"
+                                      data-ng-submit="EditDiaryEntry(entry)"
+                                      novalidate>
+                                    <div style="display:none" data-ng-init="setForm('foodDiaryEntryForm', foodDiaryEntryForm);"></div>
+
+                                    <div class="col-xs-4 meal-name">
+                                        {{entry.food.food_name}}
+                                    </div>
+                                    <div class="col-xs-2 form-group" data-show-errors>
+                                        <input name="_m_fd_d_qty" type="text" class="form-control"
+                                               placeholder="qty"
+                                               data-ng-model="foodQty"
+                                               ft-positive-float-validator
+                                               required />
+                                    </div>
+                                    <div class="col-xs-4 form-group" data-show-errors>
+                                        <select name="_m_fd_d_serving" class="form-control"
+                                                data-ng-model="currentServing"
+                                                data-ng-options="serving as serving.serving_description for serving in entry.food.servings.serving"
+                                                required />
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button type="button" class="btn btn-default"
+                                                data-ng-click="EditModeOff()">
+                                            <img src="~/Content/img/white-cross.png" />
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button type="submit" class="btn btn-primary">
+                                            <img src="~/Content/img/white-check.png" />
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-meal" data-ng-click="NewSearch();ToggleFoodAddingMode(mt.index);">Add New Meal</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,269 @@
+﻿<div class="container" data-ng-cloak>
+    <div class="row">
+        <div class="col-xs-7">
+            <div class="panel panel-default dashboard-information-panel">
+                <div class="top-pane">
+                    <div class="left-pane">
+                        <ft-goal-view goal-info="Model.goalInfo" current-weight="Session.userInfo.weight"></ft-goal-view>
+                    </div>
+
+                    <div class="center-pane">
+                        <span class="today">Today</span>
+                        <span class="day">{{ShowDateParts('weekDay')}}</span>
+                        <span class="date">{{ShowDateParts('monthDay')}}</span>
+                        <span class="month">{{ShowDateParts('monthTitle')}}</span>
+                    </div>
+                    <div class="right-pane">
+                        <ft-nutritions-donut-chart data-nutrition-info="Model.summaryNutritionInfo.consumedNInfo"></ft-nutritions-donut-chart>
+                    </div>
+                </div>
+                <div class="bottom-pane">
+                    <table cellpadding="0" cellspacing="0" width="100%" class="data-table">
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Calories</th>
+                            <th><div class="protein-point"></div>Protein</th>
+                            <th><div class="fat-point"></div>Fat</th>
+                            <th><div class="carb-point"></div>Carb</th>
+                        </tr>
+                        <tr>
+                            <td class="td-label">Planned</td>
+                            <td class="planned">{{Model.goalInfo.rde}}</td>
+                            <td class="planned">-</td>
+                            <td class="planned">-</td>
+                            <td class="planned">-</td>
+                        </tr>
+                        <tr>
+                            <td class="td-label">Consumed</td>
+                            <td class="consumed">{{Model.summaryNutritionInfo.consumedNInfo.kcal}}</td>
+                            <td class="consumed">{{Model.summaryNutritionInfo.consumedNInfo.protein}}</td>
+                            <td class="consumed">{{Model.summaryNutritionInfo.consumedNInfo.fat}}</td>
+                            <td class="consumed">{{Model.summaryNutritionInfo.consumedNInfo.carbohydrate}}</td>
+                        </tr>
+                        <tr>
+                            <td class="td-label">Burned</td>
+                            <td class="burned">{{Model.burnedCalories}}</td>
+                            <td class="burned">-</td>
+                            <td class="burned">-</td>
+                            <td class="burned">-</td>
+                        </tr>
+                        <tr>
+                            <td class="td-label">Remaining</td>
+                            <td class="rest" data-ng-class="{'red':Model.remainingInfo.kcal<0,'green':Model.remainingInfo.kcal>=0}">{{Model.remainingInfo.kcal}}</td>
+                            <td class="rest">-</td>
+                            <td class="rest">-</td>
+                            <td class="rest">-</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-5">
+            <h3 style="margin-top:0px;">Measure your weight</h3>
+            <div class="panel panel-default weight-pane">
+                <div class="panel-body">
+                    <ft-weight-measure data-goal-weight="Model.goalInfo.goalWeight"></ft-weight-measure>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    @*<div class="row">
+
+        <div class="col-xs-7">
+
+            <h3>Feed</h3>
+
+            <div class="panel panel-default feed-pane">
+
+                <div class="panel-body">
+
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-alpha.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Frank Wide</a>
+
+                            <div class="text-content">Has reachead new goal “Goal name”</div>
+
+                            <div class="date">Yesterday</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clr"></div>
+
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-beta.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Peter Blank</a>
+
+                            <div class="text-content">Something happens</div>
+
+                            <div class="date">1 day ago</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clr"></div>
+
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-gamma.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Shawn Dirk</a>
+
+                            <div class="text-content">Has reachead new goal “Goal name”</div>
+
+                            <div class="date">2 days ago</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clr"></div>
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-delta.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Kaise Moore</a>
+
+                            <div class="text-content">Has reachead new goal “Goal name”</div>
+
+                            <div class="date">6.11.2014</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clr"></div>
+
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-epsilon.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Mary Brown</a>
+
+                            <div class="text-content">Something Happened</div>
+
+                            <div class="date">4.11.2014</div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-5">
+
+            <h3>Ratings</h3>
+
+            <div class="panel panel-default ratings-pane">
+
+                <div class="panel-body">
+
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-alpha.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Frank Wide</a>
+
+                            <div class="rating">532</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clr"></div>
+
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-beta.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Peter Blank</a>
+
+                            <div class="rating">531</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clr"></div>
+
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-gamma.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Shawn Dirk</a>
+
+                            <div class="rating">529</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clr"></div>
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-delta.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Kaise Moore</a>
+
+                            <div class="rating">527</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clr"></div>
+
+                    <div class="item-row">
+
+                        <div class="avatar-pane"><img src="vision/avatar-epsilon.png" /></div>
+
+                        <div class="item-body">
+
+                            <a href="#" class="username">Mary Brown</a>
+
+                            <div class="rating">521</div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>*@
+</div>

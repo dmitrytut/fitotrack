@@ -1,0 +1,66 @@
+﻿
+<div class="panel panel-default profile-info-block visible" id="profile-goals-block">
+    <div class="panel-heading">Goals</div>
+    <div data-ng-switch="isGoalExists()">
+        <div class="panel-body" data-ng-switch-when="false">
+            <div class="profile-goals-box">
+                <a data-ui-sref="profile.goals.create" class="btn btn-primary btn-lg">Create New Goal</a>
+            </div>
+        </div>
+        <div class="panel-body" data-ng-switch-when="true">
+            <div>
+                <ft-goal-progress data-goal-type="Model.profile.goal.goalType"
+                                  data-start-weight="Model.profile.goal.startWeight"
+                                  data-goal-weight="Model.profile.goal.goalWeight"
+                                  data-current-weight="Model.profile.physicalInfo.weight"
+                                  data-description-show="true"></ft-goal-progress>
+            </div>
+            <div class="half-hor-spacer"></div>
+            <div class="row">
+                <label class="col-xs-5">Goal type</label>
+                <div class="col-xs-7">
+                    <div class="target-weight-value"><span>{{getGoalTypeTitle()}}</span></div>
+                </div>
+            </div>
+            <div class="half-hor-spacer"></div>
+            <div class="row">
+                <label class="col-xs-5">Start weight</label>
+                <div class="col-xs-7">
+                    <div class="target-weight-value"><span>{{Model.profile.goal.startWeight}}</span> kg</div>
+                </div>
+            </div>
+            <div class="half-hor-spacer"></div>
+            <div class="row">
+                <label class="col-xs-5">Goal weight</label>
+                <div class="col-xs-7">
+                    <div class="target-weight-value"><span>{{Model.profile.goal.goalWeight}}</span> kg</div>
+                </div>
+            </div>
+            <div class="half-hor-spacer"></div>
+            <div class="row">
+                <label class="col-xs-5">Goal RDI</label>
+                <div class="col-xs-7">
+                    <div class="target-weight-value"><span>{{Model.profile.goal.rde}}</span> kcal</div>
+                </div>
+            </div>
+            <div class="half-hor-spacer"></div>
+            <div class="row">
+                <label class="col-xs-5">Estimated Finish Date</label>
+                <div class="col-xs-7">
+                    <div class="target-weight-value" data-ng-switch="Model.profile.goal.estimatedFinishDate">
+                        <div ng-switch-when="null">
+                            <span>-</span>
+                        </div>
+                        <div ng-switch-default>
+                            <span>{{Model.profile.goal.estimatedFinishDate | date : 'longDate'}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half-hor-spacer"></div>
+            <div class="row">
+                <a data-ui-sref="profile.goals.create" class="col-xs-offset-5 btn btn-primary btn-lg">Change Goal</a>
+            </div>
+        </div>
+    </div>
+</div>

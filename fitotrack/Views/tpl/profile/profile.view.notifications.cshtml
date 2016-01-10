@@ -1,0 +1,23 @@
+﻿
+<div class="panel panel-default profile-info-block visible" id="profile-notifications-block">
+    <div class="panel-heading">Notifications</div>
+    <div class="panel-body">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" data-ng-model="Model.profile.notifications.pushNotifications"> Push Notifications
+                <label></label>
+            </label>
+        </div>
+        <div class="clr"></div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" data-ng-model="Model.profile.notifications.newsletter"> Daily Subscriptions
+                <label></label>
+            </label>
+        </div>
+        <div class="clr"></div>
+        <button type="button" class="col-xs-offset-5 btn btn-lg btn-primary" data-ng-click="UpdateNotifications()">
+            Save Notifications Settings
+        </button>
+    </div>
+</div>

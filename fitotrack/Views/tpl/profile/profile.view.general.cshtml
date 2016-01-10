@@ -1,0 +1,105 @@
+﻿
+<div class="panel panel-default profile-info-block visible" id="profile-general-info-block">
+    <div class="panel-heading">General</div>
+    <div class="panel-body">
+        <form name="generalInfoForm" novalidate
+              data-ng-submit="UpdateGeneral()">
+            <!--ng-class="{ loading:form.submitting }"-->
+            <div style="display:none" data-ng-init="setForm('generalInfoForm', generalInfoForm);"></div>
+            <div class="row">
+                <label class="col-xs-2">Photo</label>
+                <div class="col-xs-6">
+                    <ft-image-upload data-ng-model="Model.profile.general.userImagePath"
+                                     data-gender="{{Model.profile.general.gender}}"
+                                     data-on-success="onUserImageUpload()" />
+                </div>
+            </div>
+            <div class="half-hor-spacer"></div>
+
+            <div class="row" data-ng-hide="true">
+                <label class="col-xs-2">Username</label>
+                <div class="form-group col-xs-6">
+                    <input class="form-control" placeholder="Username" data-ng-model="Model.profile.general.userName" readonly>
+                </div>
+            </div>
+
+            <div class="half-hor-spacer"></div>
+
+            <div class="row form-group" data-show-errors>
+                <label class="col-xs-2 control-label">Fullname</label>
+                <div class="col-xs-6">
+                    <input name="_p_g_fullName" type="text" class="form-control" placeholder="e.g. John Doe"
+                           data-ng-model="Model.profile.general.fullName"
+                           maxlength="25"
+                           required />
+                    <p class="help-block small" data-ng-if="generalInfoForm._p_g_fullName.$error.required">
+                        The full name is required
+                    </p>
+                    <p class="help-block small" data-ng-if="generalInfoForm._p_g_fullName.$error.maxlength">
+                        Full name must be shorter than 250 characters
+                    </p>
+                </div>
+            </div>
+
+            <div class="half-hor-spacer"></div>
+
+            <div class="row">
+                <label class="form-group col-xs-2">Birthday</label>
+                <ft-birthday data-ng-model="Model.profile.general.birthday"></ft-birthday>
+            </div>
+
+            <div class="half-hor-spacer"></div>
+
+            <div class="row">
+                <label class="col-xs-2">Gender</label>
+                <div class="form-group col-xs-6">
+                    <div class="col-xs-3 radio">
+                        <label>
+                            <input type="radio"
+                                   name="genderRadios"
+                                   id="genderRadioM"
+                                   data-ng-model="Model.profile.general.gender"
+                                   value="{{Model.GENDER.Male}}" />
+                            Male
+                            <label></label>
+                        </label>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="col-xs-3 radio">
+                        <label>
+                            <input type="radio"
+                                   name="genderRadios"
+                                   id="genderRadioF"
+                                   data-ng-model="Model.profile.general.gender"
+                                   value="{{Model.GENDER.Female}}" />
+                            Female
+                            <label></label>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="half-hor-spacer"></div>
+
+            <div class="row form-group" data-show-errors>
+                <label class="col-xs-2 control-label">Location</label>
+                <div class="col-xs-6">
+                    <input name="_p_g_location" class="form-control" placeholder="e.g. London"
+                           data-ng-model="Model.profile.general.location"
+                           maxlength="250">
+                    <p class="help-block small" data-ng-if="generalInfoForm._p_g_location.$error.maxlength">
+                        Location must be shorter than 250 characters
+                    </p>
+                </div>
+            </div>
+
+            <div class="half-hor-spacer"></div>
+
+            <div class="form-group col-xs-offset-6">
+                <button type="submit" class="btn btn-lg btn-primary">
+                    Save General
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

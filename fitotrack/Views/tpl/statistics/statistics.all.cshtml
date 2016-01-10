@@ -1,0 +1,68 @@
+﻿
+
+<div class="panel-body">
+
+    <div class="stats-pane-body">
+        <div class="row">
+
+            <div class="col-xs-3">
+                <div class="data-header">Nutrition</div>
+            </div>
+
+            <div class="col-xs-9">
+
+                <div class="row">
+
+                    <div class="col-xs-3">
+                        <div class="value-title">Burned Calories</div>
+                        <div class="data-value">1024</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="value-title">All Time</div>
+                        <div class="data-value">1024</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="value-title">Last Month</div>
+                        <div class="data-value">1024</div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="value-title">Last Week</div>
+                        <div class="data-value">1024</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="stats-pane-graph">
+        <div class="fifteen-spacer"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tabs-box pull-right">
+                    <div class="btn-group gray">
+                        <button type="button" class="btn btn-graytab"
+                                data-ng-repeat="detailedPeriod in detailedPeriodItems"
+                                data-ng-class="{'active': detailedPeriod.isChosen}"
+                                data-ng-click="choosePeriod(detailedPeriodItems, chosenDetailedPeriod, detailedPeriod.id)">
+                            {{detailedPeriod.name}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="stats-pane-graph-body">
+                    <highchart id="_s_all_chart" config="currentModel.chartConfig"></highchart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

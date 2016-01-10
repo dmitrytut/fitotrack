@@ -1,0 +1,159 @@
+﻿<div class="container" data-ng-cloak>
+    <div class="row">
+        <div class="col-xs-7">
+            <div class="panel panel-default secondary-information-panel">
+                <div class="top-pane">
+                    <div class="arrow-left" data-ng-click="DayBefore()"></div>
+                    <div class="arrow-right" data-ng-click="DayAfter()"></div>
+                    <span class="day">{{showDateParts('weekDay')}}</span>
+                    <span class="date">{{showDateParts('monthDay')}}</span>
+                    <span class="month">{{showDateParts('monthTitle')}}</span>
+                </div>
+
+                <div class="bottom-pane">
+                    @*<div class="planned-box">
+                        <div class="text-label">Planned</div>
+                        <div class="value">{{Model.plannedKcalToBurn}}</div>
+                        <div class="text-label">Kcal</div>
+                    </div>*@
+
+                    <div class="burned-box">
+                        <div class="text-label">Burned</div>
+                        <div class="value">{{Model.totalKcalBurned}}</div>
+                        <div class="text-label">Kcal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-5">
+            <ft-calendar selected="Model.date" is-timestamp="true"></ft-calendar>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+
+            <h3>Workouts</h3>
+
+            @*<ft-exercise-sets data-type="{{Internal.searchResCurrentWorkoutDiaryEntry.exercise.type}}" data-diary-entry="Internal.searchResCurrentWorkoutDiaryEntry"></ft-exercise-sets>*@
+
+            <div class="panel panel-default exercises-list"
+                 data-ng-class="{'add-new-exercise':Internal.addingMode}">
+                <div class="panel-heading" style="border-bottom: none;">
+                    <div class="add-exercise"
+                         data-ng-click="ToggleAddingMode()">
+                        Add Exercise
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="add-new-exercise-pane">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <div class="row" style="margin-top: 5px">
+                                    <form class="row-search" data-ng-submit="ExerciseSearch()">
+                                        <div class="col-xs-10 exercise-input-pane">
+                                            <input type="text"
+                                                   class="form-control search-input"
+                                                   placeholder="Exercise Name"
+                                                   data-typeahead="suggestion for suggestion in Autocomplete($viewValue) | filter:$viewValue | limitTo:10"
+                                                   data-typeahead-wait-ms="100"
+                                                   data-typeahead-on-select="ExerciseSearch()"
+                                                   data-ng-model="Model.search.query" />
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <button type="submit"
+                                                    class="btn btn-secondary"
+                                                    data-ng-disabled="Model.isBusy">
+                                                <img src="~/Content/img/white-magnifier.png" />
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <button type="button"
+                                                    class="btn btn-default"
+                                                    data-ng-click="ToggleAddingMode()">
+                                                <img src="~/Content/img/white-cross.png" />
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="founded-items scroll-list"
+                                     data-ng-show="Internal.isSearchResultsVisible">
+                                    <div data-ng-hide="SearchNoResults()">
+                                        <div data-ng-repeat="entry in Internal.searchResWorkoutDiaryEntries">
+                                            <div class="item"
+                                                 data-ng-class="{
+                                                    'game':entry.exercise.type == Model.EXERCISE_TYPE.Game,
+                                                    'run':entry.exercise.type == Model.EXERCISE_TYPE.Cardio,
+                                                    'heavy':entry.exercise.type == Model.EXERCISE_TYPE.Strength}"
+                                                 data-ng-click="SearchResSelectEntry(entry)">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="icon"></div>
+                                                        {{entry.exercise.title}}
+                                                        <button type="button"
+                                                                class="btn btn-primary pull-right"
+                                                                data-ng-click="SearchResSelectEntry(entry);AddEntryToDiary();"
+                                                                data-ng-disabled="Model.isBusy">
+                                                            <i class="glyphicon glyphicon-plus"></i>
+                                                            Add to diary
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                @*<div class="row" data-ng-show="IsSearchResSelected(entry.exercise.exerciseId)">
+                                <div class="col-xs-12">
+                                    <ft-exercise-sets data-type="{{entry.exercise.type}}" data-diary-entry="entry"></ft-exercise-sets>
+                                </div>
+                                <div class="col-xs-12">
+                                    <button type="button"
+                                            class="btn btn-primary pull-right"
+                                            data-ng-click="AddEntryToDiary()"
+                                            data-ng-disabled="Model.isBusy">
+                                        <i class="glyphicon glyphicon-plus"></i>
+                                        Add to diary
+                                    </button>
+                                </div>
+                            </div>*@
+
+
+                                                @*<ft-exercise-sets data-diary-entry="entry"
+                            data-ng-click="SearchResSelectEntry(entry)"></ft-exercise-sets>*@
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-not-found" data-ng-show="SearchNoResults()">
+                                        @SharedRes.SharedStrings.SEARCH_NOTHING_FOUND_STR
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+
+                                <div class="popular-exercises-box">
+
+                                    <div class="box-title">Popular Exercises</div>
+
+                                    <div class="scroll-list">
+
+                                        <div class="item heavy">Push Ups</div>
+                                        <div class="item run">Run</div>
+                                        <div class="item game">Tennis</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-ng-repeat="entry in Model.workoutDiaryEntries track by $index">
+                            <div class="clr"></div>
+                            <ft-workout-diary-entry data-diary-entry="entry"></ft-workout-diary-entry>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

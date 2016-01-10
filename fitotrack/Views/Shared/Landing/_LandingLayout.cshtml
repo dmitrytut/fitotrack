@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_BasicLayout.cshtml";
+    ViewBag.Title = "Fitotrack";
+    ViewBag.Description = "Fitotrack is an activity tracking system.";
+}
+
+@section Title {
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="@ViewBag.Description" />
+}
+
+@section Head {
+    @Html.Partial("~/Views/Shared/Account/_LoginStylesPartial.cshtml")
+}
+
+<div class="container">
+    @RenderBody()
+</div>
+
+<!-- Scripts -->
+@section Scripts {
+}

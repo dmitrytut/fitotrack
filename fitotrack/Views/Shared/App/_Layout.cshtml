@@ -1,0 +1,128 @@
+﻿@{
+    Layout = "~/Views/Shared/_BasicLayout.cshtml";
+    // Set Title and Description.
+    ViewBag.Title = "Fitotrack";
+    ViewBag.Description = "Fitotrack is an activity tracking system.";
+    // Set additional attributes to the html tag.
+    ViewBag.HtmlAttrs = "data-ng-app=fitotrack data-ng-controller=AppCtrl";
+    // Set additioinal class to the body tag.
+    ViewBag.BodyClasses = "fttr";
+}
+
+@section Title {
+    <title ng-bind="appTitle()"></title>
+    <meta name="description" content="@ViewBag.Description" />     
+}
+
+@section Head {
+    <base href="@System.Configuration.ConfigurationManager.AppSettings["BaseUrlPath"].ToString()" />
+    @Html.Partial("~/Views/Shared/App/_AppStylesPartial.cshtml")
+}
+
+<div class="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" data-ui-sref="dashboard"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li id="settings-btn">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="settings-dropdown-menu" data-toggle="dropdown">
+                            <div class="icon"></div>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="settings-dropdown-menu">
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" data-ui-sref="profile.general">Settings</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation">
+                                <ft-account-logout></ft-account-logout>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div> <!--/.navbar-->
+
+<div class="user-panel">
+    <div class="container">
+        <div class="user-pane">
+            <div class="avatar-box" data-ng-cloak>
+                <a data-ui-sref="profile.general">
+                    <img data-ng-if="Session.userInfo.isUserImagePathExists()" data-ng-src="{{Session.userInfo.userImagePath}}" />
+                    <img data-ng-if="!Session.userInfo.isUserImagePathExists() && Session.userInfo.isFemale()" src="/Content/img/empty-avatar-f.png" />
+                    <img data-ng-if="!Session.userInfo.isUserImagePathExists() && !Session.userInfo.isFemale()" src="/Content/img/empty-avatar-m.png" />
+                </a>
+            </div>
+            <div class="body" data-ng-cloak>
+                <a data-ui-sref="profile.general" class="username">{{Session.userInfo.fullName}}</a>
+                <ft-user-status data-ng-model="Session.userInfo.status"></ft-user-status>
+            </div>
+        </div>
+        <div class="menu" data-ng-controller="nav.Ctrl">
+            <a data-ng-class="{active: isActive('dashboard')}"
+                data-ui-sref="dashboard"
+                class="item dashbrd">
+                <div class="icon"></div>
+                Dashboard
+            </a>
+            <a data-ng-class="{active: isActive('food')}"
+                data-ui-sref="food.diary_today"
+                class="item meal">
+                <div class="icon"></div>
+                Meal
+            </a>
+            <a data-ng-class="{active: isActive('workout')}"
+                data-ui-sref="workout.diary_today"
+                class="item workout">
+                <div class="icon"></div>
+                Workout
+            </a>
+            <a data-ng-class="{active: isActive('statistics')}"
+                data-ui-sref="statistics.all"
+                class="item stats">
+                <div class="icon">
+                </div>
+                Statistics
+            </a>
+            <a data-ng-class="{active: isActive('friends')}"
+                data-ui-sref="friends"
+                class="item friends">
+                <div class="icon"></div>
+                Friends
+            </a>
+        </div>
+    </div>
+</div> <!--/.user-panel-->
+
+<div class="content">
+    @RenderBody()
+</div> <!--/.content-->
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <a data-ui-sref="dashboard" class="logo"></a>
+            </div>
+            <div class="col-xs-6">
+                <div class="hor-spacer"></div>
+                <h4>About Project</h4>
+                <p>It real sent your at. Amounted all shy set why followed declared. Repeated of endeavor mr position kindness offering ignorant so up. Simplicity are melancholy preference considered saw companions. Disposal on outweigh do speedily in on. Him ham although thoughts entirely drawings. Acceptance unreserved old admiration projection nay yet him. Lasted am so before on esteem vanity oh. </p>
+            </div>
+        </div>
+    </div>
+</div> <!--/.footer-->
+  
+@section Scripts {
+    @Html.Partial("~/Views/Shared/App/_AppScriptsPartial.cshtml")
+}

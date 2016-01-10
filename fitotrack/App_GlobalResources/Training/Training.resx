@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADD_EXERCISE_CURRENT_DAY_STRING" xml:space="preserve">
+    <value>Add exercise</value>
+  </data>
+  <data name="EXERCISE_COMPLEXITY_BEGINNER" xml:space="preserve">
+    <value>Beginning Level</value>
+  </data>
+  <data name="EXERCISE_COMPLEXITY_INTERMEDIATE" xml:space="preserve">
+    <value>Intermediate Level</value>
+  </data>
+  <data name="EXERCISE_COMPLEXITY_INVALID_ID" xml:space="preserve">
+    <value>Incorrect identifier of complexity of exercise</value>
+  </data>
+  <data name="EXERCISE_COMPLEXITY_PROFESSIONAL" xml:space="preserve">
+    <value>Professional Level</value>
+  </data>
+  <data name="EXERCISE_COMPLEXITY_SKILLED" xml:space="preserve">
+    <value>Skilled Level</value>
+  </data>
+  <data name="EXERCISE_DESCRIPTION_INVALID_LENGHT" xml:space="preserve">
+    <value>It is long descriptions of exercise shouldn't to exceed {0} symbols</value>
+  </data>
+  <data name="EXERCISE_EQUIPMENT_INVALID_LENGHT" xml:space="preserve">
+    <value>It is long descriptions of the necessary equipment shouldn't to exceed {0} symbols</value>
+  </data>
+  <data name="EXERCISE_EXECUTION_INVALID_LENGHT" xml:space="preserve">
+    <value>It is long descriptions of performance of exercise shouldn't to exceed {0} symbols</value>
+  </data>
+  <data name="EXERCISE_MUSCLES_INVALID_ID" xml:space="preserve">
+    <value>The incorrect identifier of group of loaded muscles</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_ABS" xml:space="preserve">
+    <value>Abs</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_BACK" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_BICEPS" xml:space="preserve">
+    <value>Biceps</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_CARDIO" xml:space="preserve">
+    <value>Cardio</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_CHEST" xml:space="preserve">
+    <value>Chest</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_COMMON" xml:space="preserve">
+    <value>Common load</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_FOREARMS" xml:space="preserve">
+    <value>Forearms</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_GLUTERS" xml:space="preserve">
+    <value>Gluters</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_LOWER_LEGS" xml:space="preserve">
+    <value>LowerLegs</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_SHOULDERS" xml:space="preserve">
+    <value>Shoulders</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_TRICEPS" xml:space="preserve">
+    <value>Triceps</value>
+  </data>
+  <data name="EXERCISE_MUSCLE_GROUP_UPPER_LEGS" xml:space="preserve">
+    <value>UpperLegs</value>
+  </data>
+  <data name="EXERCISE_TITLE_INVALID_LENGHT" xml:space="preserve">
+    <value>It is long names of exercise shouldn't to exceed {0} symbols</value>
+  </data>
+  <data name="EXERCISE_TYPE_GAME" xml:space="preserve">
+    <value>Game exercises</value>
+  </data>
+  <data name="EXERCISE_TYPE_INVALID_ID" xml:space="preserve">
+    <value>Incorrect exercise identifier</value>
+  </data>
+  <data name="EXERCISE_TYPE_KARDIO" xml:space="preserve">
+    <value>Kardio (aerobic) exercises</value>
+  </data>
+  <data name="EXERCISE_TYPE_POWER" xml:space="preserve">
+    <value>Power (anaerobic) exercises</value>
+  </data>
+  <data name="EXERCISE_TYPE_USER_DEFINED" xml:space="preserve">
+    <value>User exercises</value>
+  </data>
+  <data name="EXERCISE_VIDEOHTMLCODE_INVALID_LENGHT" xml:space="preserve">
+    <value>It is long a HTML code of a player shouldn't to exceed {0} symbols</value>
+  </data>
+  <data name="TODAY_TRAINING_PAGE_STRING" xml:space="preserve">
+    <value>Today, </value>
+  </data>
+  <data name="TRAINING_PAGE_TITLE" xml:space="preserve">
+    <value>Tainings</value>
+  </data>
+  <data name="TRAINING_PROGRAM_CHOOSE_PROGRAM_STRING_PART_1" xml:space="preserve">
+    <value>In </value>
+  </data>
+  <data name="TRAINING_PROGRAM_CHOOSE_PROGRAM_STRING_PART_2" xml:space="preserve">
+    <value>appropriate section</value>
+  </data>
+  <data name="TRAINING_PROGRAM_CHOOSE_PROGRAM_STRING_PART_3" xml:space="preserve">
+    <value> you can choose the ready plan, edit it or create your own. Also, you can add exercise for this day directly on this page.</value>
+  </data>
+  <data name="TRAINING_PROGRAM_IS_NOT_CHOSEN_STRING" xml:space="preserve">
+    <value>Training plan isn't chosen.</value>
+  </data>
+  <data name="VIEW_CALENDAR_STRING" xml:space="preserve">
+    <value>View calendar</value>
+  </data>
+</root>

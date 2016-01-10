@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BRAND_STR" xml:space="preserve">
+    <value>Производитель</value>
+  </data>
+  <data name="CALCIUM" xml:space="preserve">
+    <value>Кальций</value>
+  </data>
+  <data name="CARBOHYDRATE" xml:space="preserve">
+    <value>Углеводы</value>
+  </data>
+  <data name="CARBS_DIETARYFIBER" xml:space="preserve">
+    <value>Пищевые волокна</value>
+  </data>
+  <data name="CARBS_SUGARS" xml:space="preserve">
+    <value>Сахар</value>
+  </data>
+  <data name="CHOLESTEROL" xml:space="preserve">
+    <value>Холестерин</value>
+  </data>
+  <data name="CHOOSE_SERVING_TYPE" xml:space="preserve">
+    <value>Выберите тип порции</value>
+  </data>
+  <data name="CREATE_NEW_DIET" xml:space="preserve">
+    <value>Создание новой диеты</value>
+  </data>
+  <data name="DAYS_COUNT" xml:space="preserve">
+    <value>дней</value>
+  </data>
+  <data name="DIARY_STR" xml:space="preserve">
+    <value>Дневник Питания</value>
+  </data>
+  <data name="DIET_CHOOSE" xml:space="preserve">
+    <value>Выбрать диету</value>
+  </data>
+  <data name="DIET_SAVING_ERROR" xml:space="preserve">
+    <value>Произошла ошибка при сохранении диеты '{0}'. Ошибка: '{1}'</value>
+  </data>
+  <data name="DIET_SAVING_SUCCESS" xml:space="preserve">
+    <value>Диета '{0}' сохранена успешно</value>
+  </data>
+  <data name="DIET_TITLE" xml:space="preserve">
+    <value>Диета</value>
+  </data>
+  <data name="ERR_MSG_WRONG_ID" xml:space="preserve">
+    <value>Неверный идентификатор</value>
+  </data>
+  <data name="FAT" xml:space="preserve">
+    <value>Жиры</value>
+  </data>
+  <data name="FAT_MONOUNSATURATED" xml:space="preserve">
+    <value>Мононенасыщенные жиры</value>
+  </data>
+  <data name="FAT_POLYUNSATURATED" xml:space="preserve">
+    <value>Полиненасыщенные жиры</value>
+  </data>
+  <data name="FAT_SATURATED" xml:space="preserve">
+    <value>Насыщенные жиры</value>
+  </data>
+  <data name="FAT_TRANS" xml:space="preserve">
+    <value>Транс жиры</value>
+  </data>
+  <data name="FIELD_VALIDATION_LENGTH" xml:space="preserve">
+    <value>Длина поля '{0}' должна быть не менее {1} символов</value>
+  </data>
+  <data name="FIELD_VALIDATION_RANGE" xml:space="preserve">
+    <value>Значение поля '{0}' должно быть от {1} до {2}</value>
+  </data>
+  <data name="FIELD_VALIDATION_REQUIRED" xml:space="preserve">
+    <value>Поле '{0}' обязательно для заполнения</value>
+  </data>
+  <data name="GRAMM" xml:space="preserve">
+    <value>г</value>
+  </data>
+  <data name="IRON" xml:space="preserve">
+    <value>Железо</value>
+  </data>
+  <data name="IS_LABEL" xml:space="preserve">
+    <value>это</value>
+  </data>
+  <data name="KCAL" xml:space="preserve">
+    <value>ккал</value>
+  </data>
+  <data name="KCAL_IN_100_LABEL" xml:space="preserve">
+    <value>Ккал в 100</value>
+  </data>
+  <data name="KCAL_LONG" xml:space="preserve">
+    <value>Калории</value>
+  </data>
+  <data name="MEAL_CHOOSE_PLAN" xml:space="preserve">
+    <value>Выбрать план питания</value>
+  </data>
+  <data name="MEAL_TITLE" xml:space="preserve">
+    <value>Питание</value>
+  </data>
+  <data name="MILIGRAMM" xml:space="preserve">
+    <value>мг</value>
+  </data>
+  <data name="MILILITER" xml:space="preserve">
+    <value>мл</value>
+  </data>
+  <data name="NUTRITION_FACTS" xml:space="preserve">
+    <value>Пищевая ценность</value>
+  </data>
+  <data name="OR_MALL_RESTARAUNT_STR" xml:space="preserve">
+    <value>или название магазина/ресторана</value>
+  </data>
+  <data name="PLAIN_TITLE" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="POTASSIUM" xml:space="preserve">
+    <value>Калий</value>
+  </data>
+  <data name="PRODUCT" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
+  <data name="PRODUCT_ADD_EXISTS" xml:space="preserve">
+    <value>Такой продукт уже есть!</value>
+  </data>
+  <data name="PRODUCT_ADD_FAILURE" xml:space="preserve">
+    <value>Произошла ошибка при добавлении продукта :(</value>
+  </data>
+  <data name="PRODUCT_ADD_SUCCESS" xml:space="preserve">
+    <value>Продукт успешно добавлен!</value>
+  </data>
+  <data name="PRODUCT_ADD_WELCOME" xml:space="preserve">
+    <value>Пожалуйста, введите информацию о продукте</value>
+  </data>
+  <data name="PRODUCT_EXISTS" xml:space="preserve">
+    <value>Продукт '{0}' уже есть</value>
+  </data>
+  <data name="PRODUCT_NEW_STR" xml:space="preserve">
+    <value>Создание нового продукта</value>
+  </data>
+  <data name="PRODUCT_SAVING_ERROR" xml:space="preserve">
+    <value>Произошла ошибка при сохранении продукта '{0}'</value>
+  </data>
+  <data name="PRODUCT_SAVING_SUCCESS" xml:space="preserve">
+    <value>Продукт '{0}' сохранен успешно</value>
+  </data>
+  <data name="PRODUCT_TITLE" xml:space="preserve">
+    <value>Название продукта</value>
+  </data>
+  <data name="PROTEIN" xml:space="preserve">
+    <value>Белки</value>
+  </data>
+  <data name="QTY" xml:space="preserve">
+    <value>кол-во</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Cохранить</value>
+  </data>
+  <data name="SEARCH_PRODUCT_PLACEHOLDER_STR" xml:space="preserve">
+    <value>Введите название продукта... </value>
+  </data>
+  <data name="SERVING_SIZE" xml:space="preserve">
+    <value>Размер порции</value>
+  </data>
+  <data name="SERVING_STR" xml:space="preserve">
+    <value>Порция</value>
+  </data>
+  <data name="SERVING_TYPE" xml:space="preserve">
+    <value>Тип порции</value>
+  </data>
+  <data name="SODIUM" xml:space="preserve">
+    <value>Натрий</value>
+  </data>
+  <data name="TOTAL_CARBS" xml:space="preserve">
+    <value>Всего Углеводов</value>
+  </data>
+  <data name="TOTAL_FAT" xml:space="preserve">
+    <value>Всего Жиров</value>
+  </data>
+  <data name="VALIDATION_CHOOSE_PRODUCT_TYPE" xml:space="preserve">
+    <value>Выберите тип продукта</value>
+  </data>
+  <data name="WATER" xml:space="preserve">
+    <value>Вода</value>
+  </data>
+  <data name="WEIGHT_IN_UNIT" xml:space="preserve">
+    <value>Вес в порции</value>
+  </data>
+  <data name="WEIGHT_UNIT" xml:space="preserve">
+    <value>Вес</value>
+  </data>
+</root>

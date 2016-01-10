@@ -1,0 +1,36 @@
+﻿<div class="container" data-ng-cloak>
+    <div class="row">
+        <div class="col-xs-12 exercises-stats">
+            <div class="col-xs-3">
+                <div class="list-group exercises-choose-box" id="stats-left-menu">
+                    <a class="list-group-item item"
+                       href=""
+                       data-ng-repeat="item in stateItems"
+                       data-ng-class="'{{item.iconClass}}'"
+                       data-ui-sref="{{item.state}}"
+                       data-ui-sref-active="active">{{item.name}}</a>
+                </div>
+            </div>
+
+            <div class="col-xs-9">
+                <h3>Statistics</h3>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <span class="pull-left">{{Internal.stateTitle}}</span>
+                                <span class="pull-right">
+                                    <a href class="dashed"
+                                       ng-model="Internal.chosenPeriod"
+                                       options="Internal.chosenPeriodOptions"
+                                       date-range-picker>{{Internal.periodHeaderStr}}</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-ui-view=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

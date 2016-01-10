@@ -1,0 +1,54 @@
+﻿
+<div class="exercise-subitem" data-ng-class="{ 'edit-state': Internal.isEditMode }">
+    <div class="normal-state">
+        <div class="check-btn" data-ng-click="ToggleIsCompleted()"></div>
+        <div class="exercise-name">Set {{setIndex}}: {{set.reps}} reps {{set.weight}} kg</div>
+        <div class="buttons-pane">
+            <div class="edit-btn" data-ng-click="SetEditMode(true)"></div>
+            <div class="copy-btn" data-ng-click="CopySet()"></div>
+            <div class="delete-btn" data-ng-click="DeleteSet()"></div>
+        </div>
+    </div>
+    <div class="edit-state">
+        <div class="row">
+            <form name="exerciseSetForm"
+                  data-ng-submit="SetEditMode(false)"
+                  novalidate>
+                <div style="display:none" data-ng-init="setForm('exerciseSetForm', exerciseSetForm);"></div>
+                <div class="col-xs-1">
+                    <div style="margin-top: 10px;">Set {{Internal.tempExerciseSet.order}}:</div>
+                </div>
+                <div class="col-xs-2 form-group" data-show-errors>
+                    <input name="_w_wd_s_reps" type="text" class="form-control"
+                           placeholder="reps"
+                           data-ng-model="Internal.tempExerciseSet.reps"
+                           ft-positive-numeric-validator
+                           required />
+                </div>
+                <div class="col-xs-1">
+                    <div style="margin-top: 10px;">reps</div>
+                </div>
+                <div class="col-xs-2 form-group" data-show-errors>
+                    <input name="_w_wd_s_weight" type="text" class="form-control"
+                           placeholder="weight"
+                           data-ng-model="Internal.tempExerciseSet.weight"
+                           ft-positive-float-validator
+                           required />
+                </div>
+                <div class="col-xs-4">
+                    <div style="margin-top: 10px;">kg</div>
+                </div>
+                <div class="col-xs-1">
+                    <button type="button" class="btn btn-default" data-ng-click="CancelEditMode()">
+                        <img src="~/Content/img/white-cross.png" />
+                    </button>
+                </div>
+                <div class="col-xs-1">
+                    <button type="submit" class="btn btn-primary">
+                        <img src="~/Content/img/white-check.png" />
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

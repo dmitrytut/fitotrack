@@ -1,0 +1,39 @@
+﻿
+<div class="exercise-subitem" data-ng-class="{ 'edit-state': Internal.isEditMode }">
+    <div class="normal-state">
+        <div class="check-btn" data-ng-click="ToggleIsCompleted()"></div>
+        <div class="exercise-name">{{set.duration}} min</div>
+        <div class="buttons-pane">
+            <div class="edit-btn" data-ng-click="SetEditMode(true)"></div>
+        </div>
+    </div>
+    <div class="edit-state">
+        <div class="row">
+            <form name="exerciseSetForm"
+                  data-ng-submit="SetEditMode(false)"
+                  novalidate>
+                <div style="display:none" data-ng-init="setForm('exerciseSetForm', exerciseSetForm);"></div>
+                <div class="col-xs-2 form-group" data-show-errors>
+                    <input name="_w_wd_s_duration" type="text" class="form-control"
+                           placeholder="duratioin"
+                           data-ng-model="Internal.tempExerciseSet.duration"
+                           ft-positive-float-validator
+                           required />
+                </div>
+                <div class="col-xs-8">
+                    <div style="margin-top: 10px;">min</div>
+                </div>
+                <div class="col-xs-1">
+                    <button type="button" class="btn btn-default" data-ng-click="CancelEditMode()">
+                        <img src="~/Content/img/white-cross.png" />
+                    </button>
+                </div>
+                <div class="col-xs-1">
+                    <button type="submit" class="btn btn-primary">
+                        <img src="~/Content/img/white-check.png" />
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

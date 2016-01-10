@@ -1,0 +1,56 @@
+﻿<div data-ng-cloak="">
+    <div class="page-header position-relative">
+        <h1>
+            {{Model.food.food_name}}
+            <small data-ng-show="Model.food.brand_name.length>0">
+                <i class="icon-double-angle-right"></i>
+                <a href="/Main/#!/food/search/{{Model.food.brand_name}}">{{Model.food.brand_name}}</a>
+            </small>
+        </h1>
+    </div>
+    <!--/.page-header-->
+    <div class="row">
+        <div class="col-xs-12">
+            <div>
+                <div data-ng-show="IsServingsShow()">
+                    <ul data-ng-repeat="serving in Model.food.servings.serving">
+                        <li>
+                            <a href data-ng-click="SwitchServing(serving.ft_serving_id,serving.serving_id)">{{serving.serving_description==null?'1 serving':serving.serving_description}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div class="row">
+                    {{Model.currentServing.serving_description}}
+                </div>
+                <div class="row">
+                     <div>
+                        KCal
+                        {{Model.currentServing.calories}}
+                    </div>
+                    <div>
+                        Carbs
+                        {{Model.currentServing.carbohydrate}}
+                    </div>
+                    <div>
+                        Protein
+                        {{Model.currentServing.protein}}
+
+                    </div>
+                    <div>
+                        Fat
+                        {{Model.currentServing.fat}}
+                    </div>
+                </div>
+            </div>
+
+            <div id="loading" data-ng-show='Model.isBusy'>
+                <div>
+                    @SharedRes.SharedStrings.LOADING_STR
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

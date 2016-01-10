@@ -1,0 +1,46 @@
+﻿
+<div class="panel panel-default profile-info-block visible" id="profile-privacy-block">
+    <div class="panel-heading">Privacy</div>
+    <div class="panel-body">
+        <div class="radio">
+            <label>
+                <input type="radio"
+                       name="privacyFlagsRadios"
+                       id="privacyFlagsAll"
+                       data-ng-model="Model.profile.privacy.privacyFlag"
+                       value="{{Model.PRIVACY_FLAGS.All}}" />
+                Everybody
+                <label></label>
+            </label>
+        </div>
+        <div class="clr"></div>
+        <div class="radio">
+            <label>
+                <input type="radio"
+                       name="privacyFlagsRadios"
+                       id="privacyFlagsFriendsOnly"
+                       data-ng-model="Model.profile.privacy.privacyFlag"
+                       value="{{Model.PRIVACY_FLAGS.OnlyFriends}}" />
+                Friends Only
+                <label></label>
+            </label>
+        </div>
+        <div class="clr"></div>
+        <div class="radio">
+            <label>
+                <input type="radio"
+                       name="privacyFlagsRadios"
+                       id="privacyFlagsPrivate"
+                       data-ng-model="Model.profile.privacy.privacyFlag"
+                       value="{{Model.PRIVACY_FLAGS.Private}}" />
+                Only Me
+                <label></label>
+            </label>
+        </div>
+
+        <div class="half-hor-spacer"></div>
+        <button type="button" class="col-xs-offset-5 btn btn-lg btn-primary" data-ng-click="UpdatePrivacy()">
+            Save Privacy Settings
+        </button>
+    </div>
+</div>

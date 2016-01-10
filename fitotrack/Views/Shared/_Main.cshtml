@@ -1,0 +1,224 @@
+﻿@{
+    ViewBag.Title = "Fitotrack";
+    ViewBag.Description = "Fitotrack system for analysis and suggestion your daily activities.";
+}
+
+@section TitleAndDescription
+{
+    <title>@ViewBag.Title</title>
+	<meta name="description" content="@ViewBag.Description" />
+}	
+
+    <div class="navbar" id="navbar">
+		<script type="text/javascript">
+			try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+		</script>
+
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a href="#" class="brand">
+					<small>
+						<i class="icon-leaf"></i>
+						FitoTrack
+					</small>
+				</a><!--/.brand-->
+
+				<ul class="nav ace-nav pull-right">
+					<li class="grey">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="icon-tasks"></i>
+							<span class="badge badge-grey">4</span>
+						</a>
+
+						<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-closer">
+							<li class="nav-header">
+								<i class="icon-ok"></i>
+								4 Tasks to complete
+							</li>
+
+							<li>
+								<a href="#">
+									<div class="clearfix">
+										<span class="pull-left">Task Name</span>
+										<span class="pull-right">65%</span>
+									</div>
+
+									<div class="progress progress-mini ">
+										<div style="width:65%" class="bar"></div>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									See tasks with details
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="purple">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="icon-bell-alt icon-animated-bell"></i>
+							<span class="badge badge-important">8</span>
+						</a>
+
+						<ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-closer">
+							<li class="nav-header">
+								<i class="icon-warning-sign"></i>
+								8 Notifications
+							</li>
+
+							<li>
+								<a href="#">
+									<div class="clearfix">
+										<span class="pull-left">
+											<i class="btn btn-mini no-hover btn-pink icon-comment"></i>
+											New Comments
+										</span>
+										<span class="pull-right badge badge-info">+12</span>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									See all notifications
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="green">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="icon-envelope icon-animated-vertical"></i>
+							<span class="badge badge-success">5</span>
+						</a>
+
+						<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-closer">
+							<li class="nav-header">
+								<i class="icon-envelope-alt"></i>
+								5 Messages
+							</li>
+
+							<li>
+								<a href="#">
+									<img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+									<span class="msg-body">
+										<span class="msg-title">
+											<span class="blue">Alex:</span>
+											Message Summary
+										</span>
+
+										<span class="msg-time">
+											<i class="icon-time"></i>
+											<span>Message Time</span>
+										</span>
+									</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									See all messages
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="light-blue">
+						<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+							<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+							<span class="user-info">
+								<small>Welcome,</small>
+								Jason
+							</span>
+
+							<i class="icon-caret-down"></i>
+						</a>
+
+						<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+							<li>
+								<a href="#">
+									<i class="icon-cog"></i>
+									Settings
+								</a>
+							</li>
+
+							<li class="divider"></li>
+
+							<li>
+								<a href="#">
+									<i class="icon-off"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><!--/.ace-nav-->
+			</div><!--/.container-fluid-->
+		</div><!--/.navbar-inner-->
+	</div>
+
+	<div class="main-container container-fluid">
+		<a class="menu-toggler" id="menu-toggler" href="#">
+			<span class="menu-text"></span>
+		</a>
+
+		<div class="sidebar" id="sidebar">
+			<script type="text/javascript">
+				try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
+			</script>
+
+			<ul class="nav nav-list">
+				<li>
+					<a href="index.html">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> Dashboard </span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> UI Elements </span>
+
+						<b class="arrow icon-angle-down"></b>
+					</a>
+
+					<ul class="submenu">
+						<li>
+							<a href="elements.html">
+								<i class="icon-double-angle-right"></i>
+								Elements
+							</a>
+						</li>
+
+						<li>
+							<a href="buttons.html">
+								<i class="icon-double-angle-right"></i>
+								Buttons &amp; Icons
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul><!--/.nav-list-->
+
+			<div class="sidebar-collapse" id="sidebar-collapse">
+				<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+			</div>
+
+			<script type="text/javascript">
+				try { ace.settings.check('sidebar', 'collapsed') } catch (e) { }
+			</script>
+		</div>
+
+		<div class="main-content">
+			<div class="page-content ">
+                @RenderBody()
+			</div><!--/.page-content-->
+		</div><!--/.main-content-->
+	</div><!--/.main-container-->

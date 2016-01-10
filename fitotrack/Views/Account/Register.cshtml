@@ -1,0 +1,11 @@
+﻿@model fitotrack.Models.Account.RegisterViewModel
+
+<div class="login-box center-block">
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="@Url.Action("Login", "Account")">Login</a></li>
+        <li class="active"><a href="@Url.Action("Register", "Account")">Register</a></li>
+    </ul>
+    <div class="nav-content">
+        @Html.Partial("~/Views/Shared/Account/_RegisterPartial.cshtml")
+    </div>
+</div>

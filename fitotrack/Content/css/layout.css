@@ -1,0 +1,2023 @@
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic');
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200');
+
+body.fttr{
+	font-family: 'PT Sans', sans-serif;
+	background: #f1f6f7;
+	color: #1d414b;
+	min-width: 1200px;
+}
+
+.fttr .navbar{
+	background: #57b3f3;
+	height: 70px;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-width: 800px;
+}
+
+
+/***************/
+
+/***************/
+
+.fttr .nav.navbar-nav li > a{
+	color: #fff;
+	font-size: 120%;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.fttr .nav.navbar-nav > li > a:hover{
+	background: #46a6ea;
+}
+
+.fttr .navbar-brand{
+	background: #4fabeb url('../img/logotype.png') center no-repeat;
+	width: 100px;
+	height: 70px;
+	margin-left: 0 !important;
+}
+.fttr .navbar-nav.navbar-right:last-child{
+	margin-right: 0;
+}
+
+.fttr #settings-btn .icon{
+	background: url('../img/settings-icon.png') center no-repeat;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+
+}
+.fttr #search-btn .icon{
+	background: url('../img/search-icon.png') center no-repeat;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+}
+
+.fttr .nav .dropdown-menu{
+	background: #3598dc;
+	color: #fff;
+	font-weight: normal;
+	padding: 0;
+	padding-left: 0;
+	margin-top: -3px;
+}
+
+.fttr .nav .dropdown:hover{
+	background: #46a6ea !important;
+}
+
+.fttr .nav .dropdown:hover .dropdown-menu {
+	display: block;
+ }
+ 
+.fttr .nav .dropdown-menu li > a{
+	display: block;
+	padding: 5px 15px !important;
+	clear: both;
+	font-size: 100% !important;
+	font-weight: normal !important;
+	line-height: normal !important;
+	color: #fff;
+	white-space: nowrap;
+	background: #3598dc !important;
+}
+.fttr .nav .dropdown-menu li > a:hover{
+	background-color: #2e8dce !important;
+}
+.fttr .nav .dropdown-menu li > a:active{
+	background-color: #2e8dce !important;
+}
+.fttr .nav .dropdown-menu .divider {
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+	background-color: #2e8dce;
+}
+.btn.dropdown-toggle{
+	background: transparent;
+}
+.fttr .user-panel{
+	background: #dee6e8;	
+}
+.fttr .user-panel .user-pane{
+	float: left;	
+}
+.fttr .user-panel .menu{
+	position: relative;
+	float: right;
+	min-width: 450px;
+}
+.fttr .user-panel .menu .item{
+	position: relative;
+	float: left;
+	padding-top: 70px;
+	font-size: 100%;
+	text-align: center;
+	width: 90px;
+	cursor: pointer;
+	padding-bottom: 10px;
+	display: block;
+	color: #1d414b;
+	text-decoration: none;
+}
+.fttr .user-panel .menu .item:hover{
+	background: #d1dbdd;
+}
+.fttr .user-panel .menu .item .icon{
+	width: 80px;
+	height: 60px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	margin-left: -40px;
+}
+.fttr .user-panel .menu .item.workout .icon{
+	background: url('../img/workout-icon.png') center no-repeat;
+}
+.fttr .user-panel .menu .item.stats .icon{
+	background: url('../img/stats-icon.png') center no-repeat;
+}
+.fttr .user-panel .menu .item.friends .icon{
+	background: url('../img/friends-icon.png') center no-repeat;
+}
+.fttr .user-panel .menu .item.meal .icon{
+	background: url('../img/meal-icon.png') center no-repeat;
+}
+.fttr .user-panel .menu .item.dashbrd .icon{
+	background: url('../img/dashbrd-icon.png') center no-repeat;
+}
+.fttr .user-panel .menu .item.active{
+	background: #f1f6f7 ;
+}
+
+.fttr .user-panel .user-pane{
+	position: relative;
+}
+.fttr .user-panel .user-pane .avatar-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.fttr .user-panel .menu .item.active{
+	background: #f2f6f7 url('../img/user-menu-active.png') top center no-repeat;
+}
+.fttr .user-panel .user-pane{
+	position: relative;
+	float: left;
+}
+.fttr .user-panel .user-pane .body{
+	padding: 25px;
+	padding-left: 130px;
+}
+.fttr .user-panel .user-pane .body .username{
+	font-size: 150%;
+	position: relative;
+	clear: both;
+}
+.fttr .user-panel .user-pane .body .details{
+	font-size: 100%;
+	position: relative;
+}
+
+
+
+.fttr .navbar-toggle{
+	background: url('../img/collapse-toggle-btn.png') center no-repeat;
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+}
+
+/* Footer */
+
+.fttr #footer{
+	background: #434a54;
+	color: #aab2bd;
+	padding-top: 30px;
+}
+.fttr #footer logo{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.fttr #footer h4{
+	color: #fff;
+}
+
+.fttr #footer .logo{
+	width: 129px;
+	height: 40px;
+	background: url('../img/footer-logo.png') center no-repeat;
+	display: block;
+	margin-top: 10px;
+}
+.fttr #footer .menu-box .item{
+	color: #fff;
+	clear: both;
+	display: block;
+	text-decoration: none;
+	font-size: 110%;
+	margin-bottom: 5px;
+}
+.fttr #footer .menu-box .item:hover{
+	text-decoration: underline;
+}
+
+/* Search box
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr #search-box{
+	width: 550px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/* Navbar overlay
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .navbar-collapse.collapse.in{
+	background: #000;
+	z-index: 100;
+	position: absolute;
+	right: 0;
+	top: 70px;
+}
+.fttr .navbar-collapse.collapsing{
+	display: none;
+}
+.fttr .navbar-collapse.collapse.in #search-btn,
+.fttr .navbar-collapse.collapse.in #settings-btn{
+	display: none;
+}
+.fttr .collapse-ext{
+	display: none;
+}
+.fttr .navbar-collapse.collapse.in .collapse-ext{
+	display: block;
+}
+.fttr .navbar-collapse.collapse.in ul li a{
+	line-height: 30px;
+}
+/* Form
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .form-control{
+	border-radius: 1px;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	box-shadow: none;
+	padding: 10px 16px;
+	height: auto !important;
+}
+/* Main information panel box
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .main-information-panel{
+	background: #fff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.fttr .main-information-panel .top-pane{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.fttr .main-information-panel .bottom-pane{
+	position: relative;
+	overflow: hidden;
+}
+.fttr .main-information-panel .bottom-pane .block{
+	width: 20%;
+	position: relative;
+	float: left;
+}
+.fttr .main-information-panel .bottom-pane .block .row{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.fttr .main-information-panel .bottom-pane .consumed{
+	color: #1d414b;
+	font-size: 200% !important;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .main-information-panel .bottom-pane .rest{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .main-information-panel .bottom-pane .planned{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .main-information-panel .bottom-pane .rest.red{
+	color: #f05656;
+}
+.fttr .main-information-panel .bottom-pane .rest.green{
+	color: #27b261;
+}
+
+.fttr .main-information-panel .bottom-pane .row-label{
+	padding-left: 15px;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;	
+	color: #677275;
+}
+.fttr .main-information-panel .bottom-pane .data-table td{
+	width: 20%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 130%;
+	background: #f9fbfb;
+}
+.fttr .main-information-panel .bottom-pane .data-table .td-label{
+	font-size: 110%;
+}
+.fttr .main-information-panel .bottom-pane .data-table th{
+	color: #677275;
+	background: #f9fbfb;
+	font-size: 90%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-decoration: none;
+	font-weight: normal;
+	border-top: 1px solid #f2f6f7;
+}
+.fttr .td-label{
+	font-size: 95%;
+	color: #677275;
+	padding-left: 10px;
+}
+.fttr .main-information-panel .top-pane .day{
+	font-size: 120%;
+	color: #677275;
+}
+.fttr .main-information-panel .top-pane .date{
+	font-size: 500%;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .main-information-panel .top-pane .month{
+	font-size: 120%;	
+	color: #677275;
+}
+.fttr .main-information-panel .arrow-left{
+	position: absolute;
+	left: 15px;
+	top: 45px;
+	width: 30px;
+	height: 45px;
+	background: url('../img/arrow-left.png') center no-repeat;
+	cursor: pointer;
+}
+.fttr .main-information-panel .arrow-left:hover{
+	background: url('../img/arrow-left-hover.png') center no-repeat;
+}
+.fttr .main-information-panel .arrow-right{
+	position: absolute;
+	right: 15px;
+	top: 45px;
+	width: 30px;
+	height: 45px;
+	background: url('../img/arrow-right.png') center no-repeat;
+	cursor: pointer;
+}
+.fttr .main-information-panel .arrow-right:hover{
+	background: url('../img/arrow-right-hover.png') center no-repeat;
+}
+
+/* Dashboard information panel box
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .dashboard-information-panel{
+	background: #fff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.fttr .dashboard-information-panel .top-pane{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	padding: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.fttr .dashboard-information-panel .bottom-pane{
+	position: relative;
+	overflow: hidden;
+}
+.fttr .dashboard-information-panel .bottom-pane .block{
+	width: 20%;
+	position: relative;
+	float: left;
+}
+.fttr .dashboard-information-panel .bottom-pane .block .row{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.fttr .dashboard-information-panel .bottom-pane .consumed{
+	color: #1d414b;
+	font-size: 200% !important;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .dashboard-information-panel .bottom-pane .rest{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .dashboard-information-panel .bottom-pane .planned{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .dashboard-information-panel .bottom-pane .rest.red{
+	color: #f05656;
+}
+.fttr .dashboard-information-panel .bottom-pane .rest.green{
+	color: #27b261;
+}
+
+.fttr .dashboard-information-panel .bottom-pane .row-label{
+	padding-left: 15px;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;	
+	color: #677275;
+}
+.fttr .dashboard-information-panel .bottom-pane .data-table td{
+	width: 20%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 130%;
+	background: #f9fbfb;
+}
+.fttr .dashboard-information-panel .bottom-pane .data-table .td-label{
+	font-size: 110%;
+}
+.fttr .dashboard-information-panel .bottom-pane .data-table th{
+	color: #677275;
+	background: #f9fbfb;
+	font-size: 90%;
+	border-top: 1px solid #f2f6f7;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-decoration: none;
+	font-weight: normal;
+}
+.fttr .dashboard-information-panel .td-label{
+	font-size: 95%;
+	color: #677275;
+	padding-left: 10px;
+}
+.fttr .dashboard-information-panel .top-pane .day{
+	font-size: 120%;
+	color: #677275;
+}
+.fttr .dashboard-information-panel .top-pane .date{
+	font-size: 500%;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .dashboard-information-panel .top-pane .month{
+	font-size: 120%;	
+	color: #677275;
+}
+.fttr .dashboard-information-panel .top-pane .today{
+	font-size: 120%;	
+	color: #f54545;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -25px;
+}
+.fttr .dashboard-information-panel .protein-point{
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: #57b3f3;
+	position: relative;
+	float: left;
+	margin-right: 8px;
+	margin-top: 5px;
+}
+.fttr .dashboard-information-panel .carb-point{
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: #ff975e;
+	position: relative;
+	float: left;
+	margin-right: 8px;
+	margin-top: 5px;
+}
+.fttr .dashboard-information-panel .fat-point{
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: #f2c555;
+	position: relative;
+	float: left;
+	margin-right: 8px;
+	margin-top: 5px;
+}
+
+.fttr .dashboard-information-panel .right-pane{
+	position: relative;
+	float: left;
+	width: 33%;
+}
+
+.fttr .dashboard-information-panel .left-pane{
+	position: relative;
+	float: left;
+	width: 33%;
+}
+
+.fttr .dashboard-information-panel .left-pane .item-row{
+	clear: both;
+}
+
+.fttr .dashboard-information-panel .left-pane .progress{
+	margin-bottom: 10px;
+}
+
+.fttr .dashboard-information-panel .left-pane .text-label{
+	float: left;
+	color: #677275;
+	width: 50%;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+.fttr .dashboard-information-panel .left-pane .value{
+	float: left;
+	color: #1d414b;
+	font-size: 140%;
+	font-family: "Helvetica Neue";
+	width: 50%;
+	text-align: left;
+}
+.fttr .dashboard-information-panel .left-pane span{
+	color: #677275;
+	font-size: 80%;
+	font-family: 'PT Sans', sans-serif;
+	margin-left: 5px;
+}
+
+.fttr .dashboard-information-panel .center-pane{
+	position: relative;
+	float: left;
+	width: 33%;
+	padding-top: 15px;
+}
+
+/* Weight pane
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .weight-pane{
+	
+}
+.fttr .weight-pane .my-weight-pane{
+	position: relative;
+	margin: 0 auto;
+	width: 220px;
+}
+
+.fttr .weight-pane .my-weight-pane .text-label{
+	float: left;
+	padding-top: 5px;
+	margin-right: 10px;
+	color: #1d414b;
+}
+.fttr .weight-pane .my-weight-pane .form-control{
+	float: left;
+	width: 40px;
+	padding: 5px 10px;
+	width: 50px;
+	margin-right: 10px;
+}
+.fttr .weight-pane .my-weight-pane .measure-unit{
+	float: left;
+	padding-top: 5px;
+	margin-right: 10px;
+	color: #1d414b;
+}
+.fttr .weight-pane .my-weight-pane .btn-secondary{
+	padding: 3px 10px;
+}
+
+/* Feed pane
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .feed-pane{
+
+}
+
+.fttr .feed-pane .panel-body{
+	padding: 0;
+}
+
+.fttr .feed-pane .item-row{
+	border-top: 1px solid #e3e9eb;
+	padding: 15px;
+	padding-left: 80px;
+	padding-right: 60px;
+	position: relative;
+}
+.fttr .feed-pane .item-row .date{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	color: #677275;
+	font-size: 90%;
+}
+.fttr .feed-pane .item-row .username{
+	font-size: 120%;
+	position: relative;
+	display: block;
+}
+.fttr .feed-pane .item-row .text-content{
+	font-size: 120%;
+}
+.fttr .feed-pane .item-row .avatar-pane{
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	overflow: hidden;
+}
+.fttr .feed-pane .item-row:first-child{
+	border-top: none;
+}
+/* Ratings pane
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .ratings-pane{
+
+}
+
+.fttr .ratings-pane .panel-body{
+	padding: 0;
+}
+
+.fttr .ratings-pane .item-row{
+	border-top: 1px solid #e3e9eb;
+	padding: 15px;
+	padding-left: 80px;
+	padding-right: 60px;
+	position: relative;
+	min-height: 70px;
+}
+.fttr .ratings-pane .item-row .rating{
+	position: absolute;
+	right: 15px;
+	top: 25px;
+	color: #1d414b;
+	font-size: 135%;
+}
+.fttr .ratings-pane .item-row .username{
+	padding-top: 10px;
+	font-size: 110%;
+	position: relative;
+	display: block;
+}
+
+.fttr .ratings-pane .item-row .avatar-pane{
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	overflow: hidden;
+}
+.fttr .ratings-pane .item-row .avatar-pane img{
+	width: 45px;
+	height: 45px;
+}
+.fttr .ratings-pane .item-row:first-child{
+	border-top: none;
+}
+/* Secondary information panel box
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .secondary-information-panel{
+	background: #fff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.fttr .secondary-information-panel .top-pane{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.fttr .secondary-information-panel .bottom-pane{
+	position: relative;
+	overflow: hidden;
+	background: #f9fbfb;
+}
+.fttr .secondary-information-panel .bottom-pane .planned-box{
+	width: 50%;
+	position: relative;
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.fttr .secondary-information-panel .bottom-pane .text-label{
+	font-size: 95%;
+	color: #677275;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.fttr .secondary-information-panel .bottom-pane .planned-box .value{
+	font-size: 200%;
+	font-family: "Helvetica Neue";
+	color: #1d414b;
+}
+.fttr .secondary-information-panel .bottom-pane .burned-box .value{
+	font-size: 200%;
+	font-family: "Helvetica Neue";
+	color: #27b261;
+}
+.fttr .secondary-information-panel .bottom-pane .burned-box{
+	width: 50%;
+	position: relative;
+	float: left;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.fttr .secondary-information-panel .bottom-pane .block .row{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.fttr .secondary-information-panel .bottom-pane .consumed{
+	color: #1d414b;
+	font-size: 200% !important;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .secondary-information-panel .bottom-pane .rest{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .secondary-information-panel .bottom-pane .planned{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .secondary-information-panel .bottom-pane .rest.red{
+	color: #f05656;
+}
+.fttr .secondary-information-panel .bottom-pane .rest.green{
+	color: #27b261;
+}
+
+.fttr .secondary-information-panel .bottom-pane .row-label{
+	padding-left: 15px;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;	
+	color: #677275;
+}
+.fttr .secondary-information-panel .bottom-pane .data-table td{
+	width: 20%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 130%;
+}
+.fttr .secondary-information-panel .bottom-pane .data-table .td-label{
+	font-size: 110%;
+}
+.fttr .secondary-information-panel .bottom-pane .data-table th{
+	color: #677275;
+	background: #f9fbfb;
+	font-size: 90%;
+	border-bottom: 1px solid #f2f6f7;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-decoration: none;
+	font-weight: normal;
+}
+.fttr .secondary-information-panel .td-label{
+	font-size: 95%;
+	color: #677275;
+	padding-left: 10px;
+}
+.fttr .secondary-information-panel .top-pane .day{
+	font-size: 120%;
+	color: #677275;
+}
+.fttr .secondary-information-panel .top-pane .date{
+	font-size: 500%;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;	
+}
+.fttr .secondary-information-panel .top-pane .month{
+	font-size: 120%;	
+	color: #677275;
+}
+.fttr .secondary-information-panel .arrow-left{
+	position: absolute;
+	left: 15px;
+	top: 45px;
+	width: 30px;
+	height: 45px;
+	background: url('../img/arrow-left.png') center no-repeat;
+	cursor: pointer;
+}
+.fttr .secondary-information-panel .arrow-left:hover{
+	background: url('../img/arrow-left-hover.png') center no-repeat;
+}
+.fttr .secondary-information-panel .arrow-right{
+	position: absolute;
+	right: 15px;
+	top: 45px;
+	width: 30px;
+	height: 45px;
+	background: url('../img/arrow-right.png') center no-repeat;
+	cursor: pointer;
+}
+.fttr .secondary-information-panel .arrow-right:hover{
+	background: url('../img/arrow-right-hover.png') center no-repeat;
+}
+/* Main calendar box
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .calendar-box{
+	background: #fff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding-bottom: 6px;
+}
+.fttr .calendar-box .calendar-table th{
+	color: #b0b0b0;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #f2f6f7;
+}
+.fttr .calendar-box .calendar-table th.red{
+	color: #ff9898;
+}
+.fttr .calendar-box .calendar-table td{
+	color: #1d414b;
+	font-weight: normal;
+	text-align: center;
+	font-size: 140%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+}
+.fttr .calendar-box .calendar-table td span{
+	padding: 5px 10px;
+	line-height: normal;
+	padding-top: 10px;
+	cursor: pointer;
+}
+.fttr .calendar-box .calendar-table td .different-month{
+	color: #b0b0b0;
+}
+.fttr .calendar-box .calendar-table td .weekend{
+	color: #f05656;
+}
+.fttr .calendar-box .calendar-table td .weekend.different-month{
+	opacity: 0.5;
+}
+.fttr .calendar-box .calendar-table td .today{
+	background: url('../img/today-bg.png') center no-repeat;
+	color: #fff;
+}
+.fttr .calendar-box .calendar-table td .selected{
+	background: url('../img/selected-bg.png') center no-repeat;
+	color: #fff;
+}
+
+.fttr .calendar-box .top-pane{
+	padding: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+}
+.fttr .calendar-box .top-pane .month{
+	font-size: 145%;
+	text-align: center;
+}
+.fttr .calendar-box .top-pane .arrow-left{
+	position: absolute;
+	left: 25px;
+	top: 25px;
+	width: 11px;
+	height: 19px;
+	background: url('../img/small-arrow-left.png') center no-repeat;
+	cursor: pointer;
+}
+.fttr .calendar-box .top-pane .arrow-right{
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	width: 11px;
+	height: 19px;
+	background: url('../img/small-arrow-right.png') center no-repeat;
+	cursor: pointer;
+}
+.fttr .calendar-box .top-pane .arrow-left:hover{
+	background: url('../img/small-arrow-left-hover.png') center no-repeat;
+}
+.fttr .calendar-box .top-pane .arrow-right:hover{
+	background: url('../img/small-arrow-right-hover.png') center no-repeat;
+}
+/* Panel
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.fttr .exercises-list .add-new-exercise-pane{
+	position: relative;
+	z-index: 100;
+	min-height: 300px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+.fttr .exercises-list .add-new-exercise-pane{
+	display: none;
+}	
+
+.fttr .exercises-list .add-new-exercise{
+	padding: 0;
+}
+.fttr .exercises-list.add-new-exercise .add-new-exercise-pane{
+	display: block;
+	border-bottom: 1px solid #e3e9eb;
+}
+.fttr .exercises-list .add-new-meal .meal-item{
+	display: none;
+}
+.fttr .exercises-list .add-new-meal .add-meal{
+	display: none;
+}
+.fttr .exercises-list .add-new-meal-pane{
+	display: none;
+}
+.fttr .exercises-list .add-new-meal .add-new-meal-pane{
+	display: block;
+}
+
+.fttr .exercises-list .exercise-input-pane{
+	padding-left: 75px;
+}
+
+.fttr .exercises-list .popular-exercises-box{
+	background: #f9fbfb;
+	position: relative;
+	height: 300px;
+	border-left: 1px solid #eff3f3;
+}
+.fttr .exercises-list .popular-exercises-box .box-title{
+	position: relative;
+	padding: 15px;
+	font-size: 120%;
+	border-bottom: 1px solid #eff3f3;
+	
+}
+.fttr .exercises-list .popular-exercises-box .scroll-list{
+	position: relative;
+	height: 250px;
+	overflow-y: scroll;
+}
+.fttr .exercises-list .founded-items.scroll-list{
+	position: relative;
+	height: 247px;
+	overflow-y: scroll;
+	margin-top: 5px;
+}
+.fttr .exercises-list .popular-exercises-box .item{
+	position: relative;
+	padding: 5px 15px;
+	color: #1d414b;
+	font-size: 120%;
+	cursor: pointer;
+	padding-left: 55px;
+}
+.fttr .exercises-list .popular-exercises-box .item.game{
+	background: url('../img/ball-icon.png')  15px center no-repeat;	
+}
+.fttr .exercises-list .popular-exercises-box .item.heavy{
+	background: url('../img/dumbell-icon.png') 15px center no-repeat;	
+}
+.fttr .exercises-list .popular-exercises-box .item.run{
+	background: url('../img/snikers-icon.png') 15px center no-repeat;	
+}
+.fttr .exercises-list .popular-exercises-box .item > span{
+	font-size: 90%;
+	padding-left: 10px;
+}
+.fttr .exercises-list .popular-exercises-box .item:hover{
+	background-color: #e8f0f1;
+}
+.fttr .exercises-list .popular-exercises-box .item.active{
+	color: #329ce5;
+}
+.fttr .exercises-list .founded-items .item{
+	position: relative;
+	font-size: 120%;
+	padding: 10px 15px;
+	border-bottom: 1px solid #e3e9eb;
+	cursor: pointer;
+	margin-left: 60px;
+}
+.fttr .exercises-list .founded-items .item:hover{
+	background: #ecf5fa;
+}
+.fttr .exercises-list .founded-items .item.active{
+	color: #329ce5;
+}
+.fttr .exercises-list .founded-items .item .icon{
+	position: absolute;
+	left: -40px;
+	top: 50%;
+	margin-top: -16px;
+	width: 32px;
+	height: 32px;	
+}
+.fttr .exercises-list .founded-items .item.game .icon{
+	background: url('../img/ball-icon.png')  center no-repeat;	
+}
+.fttr .exercises-list .founded-items .item.heavy .icon{
+	background: url('../img/dumbell-icon.png') center no-repeat;	
+}
+.fttr .exercises-list .founded-items .item.run .icon{
+	background: url('../img/snikers-icon.png') center no-repeat;	
+}
+.fttr .exercises-list .founded-items .item-not-found{
+	position: relative;
+	font-size: 120%;
+	padding: 10px 15px;
+	margin-left: 60px;
+}
+.fttr .exercises-list .add-exercise{
+	color: #3a8bc3;
+	padding-left: 40px;
+	background: url('../img/plus-icon.png')  5px 0 no-repeat;
+	font-size: 100%;
+	cursor: pointer;
+	padding-top: 2px;
+}
+/* Panel
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .panel{
+	border: none;
+}
+.fttr .panel-default>.panel-heading {
+	color: #677275;
+	background-color: #f9fbfb;
+	border-color: #eff3f3;
+	font-size: 120%;
+	font-family: 'Source Sans Pro', sans-serif;
+	border-top: 1px solid #eff3f3;
+}
+
+/* Panel
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .meals-list .meal-item{
+	position: relative;
+	padding: 10px 5px;
+	color: #1d414b;
+	font-size: 120%;
+	border-bottom: 1px solid #e3e9eb;
+	padding-left: 20px !important;
+	padding-right: 60px;
+}
+
+.fttr .meals-list .add-meal{
+	color: #3a8bc3;
+	padding-left: 40px;
+	background: url('../img/plus-icon.png')  10px 7px no-repeat;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 110%;
+	cursor: pointer;
+}
+.fttr .meals-list .meal-item:hover{
+	background: #ecf5fa;
+}
+.fttr .meals-list .meal-item:first-child{
+	position: relative;
+	padding: 10px 5px;
+	color: #1d414b;
+	font-size: 130%;
+	border-top: none;
+}
+.fttr .meals-list .meal-item .edit-state{
+	display: none;
+}
+.fttr .meals-list .meal-item.edit-state .edit-state{
+	display: block;
+}
+.fttr .meals-list .meal-item:hover.edit-state{
+	background: #fff;
+}
+.fttr .meals-list .meal-item.edit-state .normal-state{
+	display: none;
+}
+.fttr .meals-list .panel-body{
+	padding: 0 !important;
+	padding-left: 40px !important;
+}
+@media (min-width: 960px) {
+
+	.fttr .meals-list .panel-body{
+		padding: 0 !important;
+		padding-left: 120px !important;
+	}
+
+}
+.fttr .meals-list .meal-item .check-btn{
+	position: absolute;
+	left: -30px;
+	top: 12px;
+	width: 21px;
+	height: 14px;
+	background: url('../img/check-icon.png') center no-repeat;
+	cursor: pointer;
+}
+.fttr .meals-list .meal-item .check-btn.checked{
+	background: url('../img/check-icon-checked.png') center no-repeat;
+}
+.fttr .meals-list .meal-item .buttons-pane{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: none;
+}
+.fttr .meals-list .meal-item:hover .buttons-pane{
+	display: block;
+}
+.fttr .meals-list .meal-item .buttons-pane .delete-btn{
+	position: relative;
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url('../img/delete-icon.png') center no-repeat;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.fttr .meals-list .meal-item .buttons-pane .edit-btn{
+	position: relative;
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url('../img/edit-icon.png') center no-repeat;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.fttr .meals-list .meal-item .meal-name{
+	position: relative;
+}
+.fttr .meals-list .meal-item .meal-name span{
+	font-size: 90%;
+}
+/* Exercise list
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .exercises-list .panel-body{
+	padding: 0;
+}
+
+.fttr .exercises-list .exercise-item{
+	position: relative;
+	padding: 10px 5px;
+	color: #1d414b;
+	font-size: 120%;
+
+	padding-left: 20px !important;
+	padding-right: 60px;
+}
+.fttr .exercises-list .exercise-item .add-set{
+	color: #3a8bc3;
+	padding-left: 40px;
+	background: url('../img/plus-icon.png')  10px 7px no-repeat;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 90%;
+	cursor: pointer;
+	background: #fff;
+}
+.fttr .exercises-list .exercise-subitem{
+	position: relative;
+	padding: 10px 5px;
+	color: #1d414b;
+	font-size: 120%;
+	padding-left: 20px !important;
+	padding-right: 60px;
+}
+.fttr .exercises-list .exercise-subitem:hover{
+	background: #ecf5fa;
+}
+.fttr .exercises-list .add-set{
+	color: #3a8bc3;
+	padding-left: 40px;
+	background: url('../img/plus-icon.png')  10px 7px no-repeat;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 110%;
+	cursor: pointer;
+}
+.fttr .exercises-list .exercise-subitem:hover,
+.fttr .exercises-list .exercise-item:hover{
+	background: #ecf5fa;
+}
+.fttr .exercises-list .exercise-subitem .edit-state,
+.fttr .exercises-list .exercise-item .edit-state{
+	display: none;
+}
+
+.fttr .exercises-list .exercise-subitem.edit-state .edit-state,
+.fttr .exercises-list .exercise-item.edit-state .edit-state{
+	display: block;
+}
+
+.fttr .exercises-list .exercise-subitem:hover.edit-state,
+.fttr .exercises-list .exercise-item:hover.edit-state{
+	background: #fff;
+}
+.fttr .exercises-list .exercise-subitem.edit-state .normal-state,
+.fttr .exercises-list .exercise-item.edit-state .normal-state{
+	display: none;
+}
+.fttr .exercises-list .panel-body{
+	padding: 0 !important;
+}
+@media (min-width: 960px) {
+
+	.fttr .meals-list .panel-body{
+		padding: 0 !important;
+		padding-left: 120px !important;
+	}
+
+}
+.fttr .exercises-list .exercise-subitem .check-btn,
+.fttr .exercises-list .exercise-item .check-btn{
+	position: absolute;
+	left: -30px;
+	top: 12px;
+	width: 21px;
+	height: 14px;
+	background: url('../img/check-icon.png') center no-repeat;
+	cursor: pointer;
+}
+.fttr .exercises-list .exercise-subitem .check-btn.checked,
+.fttr .exercises-list .exercise-item .check-btn.checked{
+	background: url('../img/check-icon-checked.png') center no-repeat;
+}
+.fttr .exercises-list .exercise-subitem .buttons-pane,
+.fttr .exercises-list .exercise-item .buttons-pane{
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	display: none;
+}
+.fttr .exercises-list .exercise-subitem:hover .buttons-pane,
+.fttr .exercises-list .exercise-item:hover .buttons-pane{
+	display: block;
+}
+.fttr .exercises-list .exercise-subitem .buttons-pane .delete-btn,
+.fttr .exercises-list .exercise-item .buttons-pane .delete-btn{
+	position: relative;
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url('../img/delete-icon.png') center no-repeat;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.fttr .exercises-list .exercise-subitem .buttons-pane .edit-btn,
+.fttr .exercises-list .exercise-item .buttons-pane .edit-btn{
+	position: relative;
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url('../img/edit-icon.png') center no-repeat;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.fttr .exercises-list .exercise-subitem .buttons-pane .copy-btn,
+.fttr .exercises-list .exercise-item .buttons-pane .copy-btn{
+	position: relative;
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url('../img/copy-icon.png') center no-repeat;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.fttr .exercises-list .exercise-subitem .exercise-name,
+.fttr .exercises-list .exercise-item .exercise-name{
+	position: relative;
+}
+.fttr .exercises-list .exercise-item .heavy-icon,
+.fttr .exercises-list .exercise-item .run-icon,
+.fttr .exercises-list .exercise-item .game-icon{
+	position: absolute;
+	left: -35px;
+	top: 10px;
+	width: 32px;
+	height: 32px;
+}
+.fttr .exercises-list .exercise-item .expand-arrow{
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	width: 20px;
+	height: 15px;
+}
+.fttr .exercises-list .exercise-item .heavy-icon{
+	background: url('../img/dumbell-icon.png') center no-repeat;
+}
+.fttr .exercises-list .exercise-item .run-icon{
+	background: url('../img/snikers-icon.png') center no-repeat;
+}
+.fttr .exercises-list .exercise-item .game-icon{
+	background: url('../img/ball-icon.png') center no-repeat;
+}
+.fttr .exercises-list .exercise-item .exercise-name span{
+	font-size: 90%;
+}
+.fttr .exercises-list .exercise-item .exercise-details{
+	font-size: 90%;
+	color: #677275;
+}
+.fttr .exercises-list .exercise-block{
+	border-top: 1px solid #e3e9eb;
+	padding-left: 55px;
+}
+
+.fttr .exercises-list .exercise-block .exercise-item .expand-arrow{
+	background: url('../img/expand-arrow-closed.png') center no-repeat;
+}
+.fttr .exercises-list .exercise-block.expanded .exercise-item .expand-arrow{
+	background: url('../img/expand-arrow-opened.png') center no-repeat;
+}
+
+.fttr .exercises-list .exercise-block.expanded .exercise-item .exercise-details{
+	display: none;
+}
+
+.fttr .exercises-list .exercise-block .expand-state{
+	display: none;
+}
+.fttr .exercises-list .exercise-block.expanded .expand-state{
+	display: block;
+}
+.fttr .exercises-list .exercise-block .add-set-pane{
+	padding: 10px;
+	display: none;
+	font-size: 120%;
+	padding-left: 20px;
+	padding-right: 60px;
+}
+/* Exercises Stats
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*.fttr .exercises-stats .panel-body{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.fttr .exercises-stats{
+	background: #f9fbfb;
+}
+.fttr .exercises-stats .left-pane{
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	padding-left: 0;
+	padding-right: 0;
+	border-right: 1px solid #eff3f3;
+	padding-bottom: 15px;
+	min-height: 600px;
+}*/
+.fttr .exercises-stats .exercises-choose-box{
+	position: relative;
+	background-color: #fff;
+}
+.fttr .exercises-stats .exercises-choose-box .box-title{
+	position: relative;
+	padding: 15px 20px;
+	font-size: 120%;
+}
+.fttr .exercises-stats .exercises-choose-box .item {
+	position: relative;
+	color: #1d414b;
+	font-size: 120%;
+	cursor: pointer;
+	padding-left: 55px;
+}
+.fttr .exercises-stats .exercises-choose-box .item.heavy {
+background: url('../img/blue-heavy-icon.png') 15px center no-repeat;
+}
+.fttr .exercises-stats .exercises-choose-box .item.cardio {
+background: url('../img/cardio-icon.png') 15px center no-repeat;
+}
+.fttr .exercises-stats .exercises-choose-box .item.nutrition {
+background: url('../img/nutrinion-icon.png') 15px center no-repeat;
+}
+.fttr .exercises-stats .exercises-choose-box .item:hover {
+	background-color: #fff;
+}
+.fttr .exercises-stats .stats-pane-header{
+	position: relative;
+	/*padding-top: 10px;*/
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eff3f3;
+	text-align: center;
+	/*background: #f9fbfb;*/
+}
+
+.fttr .exercises-stats .stats-pane-graph .stats-pane-graph-body{
+	height: 400px;
+}
+.fttr .btn-graytab{
+	background: #f9fbfb;
+	border: 1px solid #e5eaea;
+	color: #1d414b;
+}
+.fttr .exercises-stats .btn-graytab{
+	
+	font-size: 110%;
+}
+.fttr .btn-graytab:hover{
+	background: #fff;
+}
+.fttr .btn-graytab.active{
+	background: #f2f6f7;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important
+	
+}
+.fttr .exercises-stats .tabs-box{
+	text-align: center;
+	position: relative;
+}
+.fttr .exercises-stats .stats-pane-body{
+	border-bottom: 1px solid #eff3f3;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #fff;
+}
+.fttr .exercises-stats .stats-pane-body .data-header{
+	padding-left: 15px;
+	font-size: 160%;
+	color: #333;
+}
+.fttr .exercises-stats .stats-pane-body .value-title{
+	font-size: 110%;
+	color: #677275;
+	padding-top: 5px;
+}
+.fttr .exercises-stats .stats-pane-body .col{
+	position: relative;
+	float: left;
+}
+.fttr .exercises-stats .stats-pane-body .data-value{
+	font-size: 200%;
+	color: #333;
+}
+
+
+.fttr .exercises-stats .stats-pane-header .date-choose-box .text-title{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+}
+.fttr .exercises-stats .stats-pane-header .date-choose-box .calendar-small-icon{
+	float: left;
+	margin-right: 5px;
+}
+.fttr .exercises-stats .stats-pane-header .date-choose-box .form-control{
+	float: left;
+	font-size: 100%;
+	width: 200px;
+	padding: 5px 10px;
+}
+
+.fttr .no-padding{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.fttr .exercises-stats .stats-pane-header .date-choose-box{
+	position: relative;
+	text-align: center;
+}
+.fttr .exercises-stats .stats-pane-header .date-choose-box .calendar-small-icon{
+	width: 26px;
+	height: 26px;
+	float: left;
+	background-image: url('../img/calendar-small-icon.png');
+	margin-right: 10px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+/* Content
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.fttr .content{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* Hor-spacer
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .hor-spacer{
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	height: 20px;
+}
+/* Btns
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .btn-default{
+	color: #fff;
+	background: #d0d8da;
+	border-color: #d0d8da; 
+}
+.fttr .btn-default:hover,
+.fttr .btn-default:focus,
+.fttr .btn-default:active{
+	background: #bdc8cb;
+	border-color: #bdc8cb;	
+}
+.fttr .btn-primary{
+	color: #fff;
+	background: #2fcc71;
+	border-color: #2fcc71; 
+}
+.fttr .btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+	background: #29c068;
+	border-color: #29c068;
+}
+.fttr .btn-secondary{
+	color: #fff;
+	background: #4fabeb;
+	border-color: #4fabeb;
+}
+.fttr .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active{
+	background: #58b3f2;
+	border-color: #58b3f2;
+}
+/* Dropdown
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .dropdown-menu.search-result{
+	background: #fff;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	margin-top: -1px;
+	margin-left: 15px;
+}
+.fttr .dropdown-menu.search-result li a{
+	color: #1d414b;
+}
+.fttr .dropdown-menu.search-result li a:hover{
+	background: #f2f6f7 !important;
+}
+.fttr .dropdown-menu.search-result .divider{
+	background: #dfe9ec;
+}
+
+.fttr .form-control.search-input{
+	padding-right: 40px;
+}
+.fttr .form-control{
+	font-size: 110%;
+}
+.fttr .loading{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 20px;
+	height: 20px;
+	background: url('../img/loading-icon.png') center no-repeat;
+}
+.fttr .meals-list .add-new-meal-pane{
+	position: relative;
+	z-index: 100;
+	min-height: 300px;
+	overflow: hidden;
+}
+
+
+.fttr .meals-list .add-new-meal .meal-item{
+	display: none;
+}
+.fttr .meals-list .add-new-meal .add-meal{
+	display: none;
+}
+.fttr .meals-list .add-new-meal-pane{
+	display: none;
+}
+.fttr .meals-list .add-new-meal .add-new-meal-pane{
+	display: block;
+}
+
+
+
+.fttr .meals-list .most-eaten-box{
+	background: #f9fbfb;
+	position: relative;
+	height: 300px;
+	border-left: 1px solid #eff3f3;
+}
+.fttr .meals-list .most-eaten-box .box-title{
+	position: relative;
+	padding: 15px;
+	font-size: 120%;
+	border-bottom: 1px solid #eff3f3;
+	
+}
+.fttr .meals-list .most-eaten-box .scroll-list{
+	position: relative;
+	height: 250px;
+	overflow-y: scroll;
+}
+.fttr .meals-list .founded-items.scroll-list{
+	position: relative;
+	height: 250px;
+	overflow-y: scroll;
+	margin-top: 5px;
+}
+.fttr .meals-list .most-eaten-box .item{
+	position: relative;
+	padding: 5px 15px;
+	color: #1d414b;
+	font-size: 120%;
+	cursor: pointer;
+}
+.fttr .meals-list .most-eaten-box .item > span{
+
+	font-size: 90%;
+	padding-left: 10px;
+}
+.fttr .meals-list .most-eaten-box .item:hover{
+	background: #e8f0f1;
+}
+.fttr .meals-list .most-eaten-box .item.active{
+	color: #329ce5;
+}
+.fttr .meals-list .founded-items .item{
+	position: relative;
+	font-size: 120%;
+	padding: 10px 15px;
+	border-bottom: 1px solid #e3e9eb;
+	cursor: pointer;
+}
+.fttr .meals-list .founded-items .item:hover{
+	background: #ecf5fa;
+}
+.fttr .meals-list .founded-items .item.active{
+	color: #329ce5;
+}
+.fttr .meals-list .founded-items .item-not-found{
+	position: relative;
+	font-size: 120%;
+	padding: 10px 15px;
+}
+.fttr .nav.navbar-nav .dropdown.open{
+	background: #46a6ea;
+}
+
+.fttr .nav.navbar-nav .btn.dropdown-toggle{
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.fttr .nav.navbar-nav .dropdown-menu{
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: 0;
+}
+.fttr .nav.navbar-nav .dropdown{
+	padding-bottom: 13px;
+	padding-top: 10px;
+}
+.fttr #profile-left-menu, #stats-left-menu{
+	margin-top: 57px;
+}
+.fttr .list-group .list-group-item{
+	border: none;
+	color: #1d414b;
+	font-size: 120%;
+}
+.fttr .list-group .list-group-item.active{
+	background: #fff;
+	color: #2f7dcd !important;
+}
+.fttr .list-group .list-group-item:hover{
+	background-color: #e8f0f2 !important;
+}
+
+.fttr .profile-info-block{
+	display: none;
+}
+
+.fttr .profile-info-block .panel-body{
+	font-size: 120%;	
+}
+
+.fttr .visible{
+	display: block !important;
+}
+
+.fttr .half-hor-spacer{
+	clear: both;
+	height: 10px;
+}
+.fttr .fifteen-spacer{
+	clear: both;
+	height: 15px;
+}
+.fttr label{
+	font-weight: normal;
+	color: #677275;
+	padding-top: 15px;
+}
+
+.fttr .radio,
+.fttr .checkbox {
+	position: relative;
+	padding-left: 35px;
+}
+.fttr .radio input[type='radio'], 
+.fttr .checkbox input[type='checkbox'] {
+	
+	/* Hide the input, but have it still be clickable */
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	display: block;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.fttr .radio input[type='radio'] + label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	clear: none;
+	
+	/* Left padding makes room for image */
+
+
+	/* Make look clickable because they are */
+	cursor: pointer;
+	
+	background: url('../img/radio-off.png') left center no-repeat;
+	width: 26px;
+	height: 26px;
+	z-index: 1;
+}
+
+.fttr .checkbox input[type='checkbox'] + label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	clear: none;
+	
+	/* Left padding makes room for image */
+
+
+	/* Make look clickable because they are */
+	cursor: pointer;
+	
+	background: url('../img/checkbox-off.png') left center no-repeat;
+	width: 26px;
+	height: 26px;
+	z-index: 1;
+	
+}
+
+/*
+	Change from unchecked to checked graphic
+*/
+.fttr .radio input[type='radio']:checked + label{
+	background-image: url('../img/radio.png');
+}
+.fttr .checkbox input[type='checkbox']:checked + label{
+	background-image: url('../img/checkbox.png');
+}
+.fttr .btn-default.dropdown-toggle{
+	background: #fff;
+	color: #000;
+	border-radius: 0;
+}
+.btn-group.open .dropdown-toggle{
+	box-shadow: none;
+}
+.fttr .dropdown-white.dropdown-menu{
+	background: #fff !important;
+}
+.fttr .dropdown-white.dropdown-menu li a{
+	color: #333;
+}
+.fttr .dropdown-white.dropdown-menu li > a:hover{
+	background: #e8f0f2 !important;
+}
+.fttr .dropdown-white.dropdown-menu .divider {
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+	background-color: #e8f0f2;
+}
+.fttr .calendar-icon{
+	width: 37px;
+	height: 38px;
+	float: left;
+	background-image: url('../img/calendar-icon.png');
+	margin-right: 10px;
+	margin-top: 5px;
+	cursor: pointer;	
+}
+.fttr .profile-avatar-pane{
+	position: relative;
+	float: left;
+	height: 100px;
+	width: 100px;
+	background: #dee6e9;
+}
+
+.fttr .upload-photo-btn{
+	margin-top: 25px;
+	margin-left: 25px;
+}
+.fttr .input-text-label{
+	float: left;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+/*.fttr .profile-goals-progress{
+	height: 3em;
+	i { line-height: 3.5em; }
+}*/
+.fttr .profile-goals-box{
+	position: relative;
+	height: 250px;
+	
+}
+.fttr .profile-goals-box .btn-primary{
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	margin-top: -15px;
+	margin-left: -50px;	
+}
+.fttr .target-weight-value{
+	font-size: 110%;
+}
+.fttr .target-weight-value span{
+	font-size: 140%;
+	font-weight: bold;
+}
+.fttr .modal-footer,
+.fttr .modal-header{
+	border: none;	
+}
+.fttr .modal-header{
+	padding-bottom: 5px;
+	padding-top: 10px;
+	border-bottom: 1px solid #e3ecf0;
+	background: #f1f6f7;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+}
+.fttr .modal-content{
+	box-shadow: none !important;
+	border: none;
+}
+.fttr .modal .modal-body{
+	font-size: 130%;
+}
+.fttr select{
+	margin-top: 10px;
+}
+
+/* Donut nutrition graphic
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fttr .ft-nutrition-donut{
+	position: relative;
+	height:115px;
+	width:190px;
+}
+.fttr .ft-nutrition-donut .protein-pane{
+	position: absolute;
+	background:#57b3f3;
+	height:30px;
+	width:40px;
+	top:0px;
+	left:0px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.fttr .ft-nutrition-donut .protein-pane .protein-label{
+	color:white; 
+	font-weight: bold; 
+	height: 30px; 
+	line-height: 30px; 
+	padding: 0;
+}
+.fttr .ft-nutrition-donut .carbs-pane{
+	position: absolute;
+	background:#ff975e;
+	height:30px;
+	width:40px;
+	top:0px;
+	left:150px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.fttr .ft-nutrition-donut .carbs-pane .carbs-label{
+	color:white; 
+	font-weight: bold; 
+	height: 30px; 
+	line-height: 30px; 
+	padding: 0;
+}
+.fttr .ft-nutrition-donut .fat-pane{
+	position: absolute;
+	height:30px;
+	width:40px;
+	background:#f2c555;
+	top:85px;
+	left:150px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.fttr .ft-nutrition-donut .fat-pane .fat-label{
+	color:white; 
+	font-weight: bold; 
+	height: 30px; 
+	line-height: 30px; 
+	padding: 0;
+}
+.fttr .ft-nutrition-donut .donut-pane{
+	position: absolute;
+	height:105px;
+	width:110px;
+	top:0px;
+	left:40px;
+}
+
+/* Statistics 
+	----------------------------------------------------------------------------------------------------------------------------
+*/
+
+.fttr a.dashed {
+	text-decoration: none; 
+	border-bottom: 1px dashed;
+}

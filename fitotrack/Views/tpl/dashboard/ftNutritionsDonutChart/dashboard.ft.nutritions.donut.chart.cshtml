@@ -1,0 +1,20 @@
+﻿<div class="ft-nutrition-donut">
+    <div class="protein-pane"
+         data-ng-mouseover="onMouseOver(2)"
+         data-ng-mouseleave="onMouseLeave(2)">
+        <label class="protein-label">{{proteinPercent}}%</label>
+    </div>
+    <div class="carbs-pane"
+         data-ng-mouseover="onMouseOver(0)"
+         data-ng-mouseleave="onMouseLeave(0)">
+        <label class="carbs-label">{{carbsPercent}}%</label>
+    </div>
+    <div class="fat-pane"
+         data-ng-mouseover="onMouseOver(1)"
+         data-ng-mouseleave="onMouseLeave(1)">
+        <label class="fat-label">{{fatPercent}}%</label>
+    </div>
+    <div class="donut-pane">
+        <highchart id="_d_nutrition_donut" config="donutChartConfig"></highchart>
+    </div>
+</div>

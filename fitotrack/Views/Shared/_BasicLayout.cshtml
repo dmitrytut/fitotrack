@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en" @ViewBag.HtmlAttrs>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=0">
+    <meta name="fragment" content="!" />
+
+    <!--Title section-->
+    @RenderSection("Title", required: true)
+
+    <!-- Basic Styles -->
+    @Html.Partial("_BasicStylesPartial")
+
+    <!-- Styles section-->
+    @RenderSection("Head", required: false)
+</head>
+
+<body class="@ViewBag.BodyClasses">
+    @RenderBody()
+
+    <!--Basic Scripts-->
+    @Html.Partial("_BasicScriptsPartial")
+
+    <!--Scripts section-->
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

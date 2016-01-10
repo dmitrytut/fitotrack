@@ -1,0 +1,33 @@
+﻿
+<div class="panel panel-default calendar-box">
+    <div class="top-pane">
+        <div class="arrow-left" data-ng-click="previous()"></div>
+        <div class="arrow-right" data-ng-click="next()"></div>
+        <div class="month">{{month.format("MMMM YYYY")}}</div>
+    </div>
+    <table cellpadding="0" cellspacing="0" width="100%" class="calendar-table">
+
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th class="red">Sat</th>
+            <th class="red">Sun</th>
+        </tr>
+
+        <tr data-ng-repeat="week in weeks">
+            <td data-ng-repeat="day in week.days"
+                data-ng-click="select(day)">
+                <span data-ng-class="{
+                      today: day.isToday,
+                      selected: day.date.isSame(_selected),
+                      weekend: day.isWeekend,
+                      'different-month': !day.isCurrentMonth}">
+                    {{day.number}}
+                </span>
+            </td>
+        </tr>
+    </table>
+</div>

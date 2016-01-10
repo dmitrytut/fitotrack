@@ -1,0 +1,16 @@
+﻿<div class="my-weight-pane">
+    <div class="text-label">
+        Today weight
+    </div>
+    <form data-ng-submit="saveWeight()">
+        <input type="text" class="form-control"
+               data-ng-model="_newWeight">
+        <div class="measure-unit">kg</div>
+        <button type="submit" class="btn btn-secondary"><i class="glyphicon glyphicon-plus"></i></button>
+    </form>
+</div>
+<div data-ng-if="_isGraphicEnabled">
+    <center>
+        <highchart id="_c_w_line_graph" config="weightChartConfig"></highchart>
+    </center>
+</div>

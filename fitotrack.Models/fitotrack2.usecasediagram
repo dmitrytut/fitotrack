@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fe015795-351d-42c9-b7b4-36cb8bb8f21c" name="fitotrack2" linkedPackageId="20785d70-5bc1-47de-9718-0577cf82833d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="34b8acf7-fd43-4a66-9c6d-ae6055a5eaf3">
+      <profileInstance Id="e6537bdd-622d-4bd5-bbd3-cd0d9b958097" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="50f47a7b-98b7-495a-ad92-16119612a22a">
+      <profileInstance Id="ba61bb9a-807f-4c10-bd64-527f64e723b5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9108602d-9a53-496f-8fc7-4e4ecacfba10" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="286e49cb-2ded-4f2a-9684-c6919127485e" />
+        <targetEnds>
+          <association Id="68e4dc96-4f85-41e8-8ee2-e5906fcd93e5" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bc03e37e-c1b6-48b8-899c-6b7fb6c87f48" LastKnownName="Register" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4af6d2f-0f5b-4db9-989a-e63653dff2d5" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b25c5db-23a1-43bb-957e-91570da3c37d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="973c649e-84db-4653-8ca3-8f552eb87eb4" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d2dd116-3831-4e9e-a346-1c419daa9563" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="56694afd-db99-4e16-91df-3b4e1246f206" />
+          </association>
+          <association Id="abe0f322-07c4-457a-8d14-d904f3357cc9" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register as Trainer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0733f018-04d0-4f15-bf87-126ebfa21e52" LastKnownName="Register as Trainer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c32c02f0-0c49-4bbc-9c6a-10f8e2562e15" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="acd7c77e-7b17-400c-9778-b97893b23127" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ea84970-04e9-4b37-b90c-5b41d9f1bb83" name="Register as Trainer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="820d7bd6-ba21-40bb-a276-32b9993ce1f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="84777523-bea6-4ace-a8c2-b92bb59cf685" />
+          </association>
+          <association Id="49425e8d-bf00-4736-99de-152462bca5d3" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register as Fitness Club" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="773e42d6-0230-428d-bc46-1a2540f4da59" LastKnownName="Register as Fitness Club" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1712560b-8cec-4199-b4eb-0cc12e1d084d" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="975da5e8-85de-46da-867a-06e548e1d638" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77adaa8c-6e0c-4b01-a5b0-c4be4906ddf7" name="Register as Fitness Club" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12d726a0-2365-405b-bfab-256219a996e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="31271826-d901-45e5-842b-cf401022cada" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="cb29ac0b-a767-4377-98b4-3cc60daae82f" name="Registered User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e16f5471-6940-491e-80ea-445f94e2d7e9" />
+        <targetEnds>
+          <association Id="15ebc3fe-8007-4eab-95aa-9a38442e27b3" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Search for Trainers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1e737d71-1962-494b-bd55-29ac8d538136" LastKnownName="Search for Trainers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d6e4dc5-42ac-408c-ac9c-e9e03c5d58d3" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="adc1847e-7cbe-4f1c-a2ee-c690372586ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="720524a1-f515-45bb-adb3-35ba2d85e540" name="Search for Trainers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="899b3444-4bbb-4abd-a46c-f71c87ac7ad3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16b76349-69b3-48f8-a81a-0d034c25617f" />
+          </association>
+          <association Id="de92d9cd-2dc1-4f8e-8172-baa14f541ec2" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Search for Events" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="648125d8-805a-42a5-ad18-94af8d57c5c3" LastKnownName="Search for Events" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="70b26d87-0f11-4845-8555-e2f1fb6cce17" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1e2008be-2273-4f60-8f90-d47f293930a4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="603624ec-64cb-408d-881e-9d2491693248" name="Search for Events" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7b160a1a-425c-4066-855a-28d8c88dea20" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="131de0f9-bef1-4199-a0aa-d96c184e066c" />
+          </association>
+          <association Id="3093d532-fc48-4204-82d0-1296773aa489" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Track Consumed Food in Food Diary" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8df1675b-39d4-4855-b32a-baffb48a8ded" LastKnownName="Track Consumed Food in Food Diary" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5dceb08d-9e5f-4e5a-b8c6-7995b5867bab" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9ccafdca-bbd4-452e-a1ac-c9999bddf101" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8080a9ee-5573-4a96-98bf-ca020d95fedb" name="Track Consumed Food in Food Diary" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="19d4e836-5869-426e-9437-92659ba3259d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bbb00e7e-9e17-4c82-ab50-733794d2f2ae" />
+          </association>
+          <association Id="845e86f5-997a-433c-8f71-fea70bfd7cf3" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Plan Food program in Food Diary" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b2d6ed6a-18d3-40d5-ab50-f2fa58bdd655" LastKnownName="Plan Food program in Food Diary" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b7152e0-ce98-429f-bef9-4f4fae8f7336" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3f758ee4-f3e9-4796-8876-f5694868959e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f36219fc-d14c-4392-8055-b59f414c5b67" name="Plan Food program in Food Diary" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da7ae2ca-ddf3-41f7-b9cc-f7aeda20315b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8d53ae77-39ab-43a2-a50d-8b6ca9cd5492" />
+          </association>
+          <association Id="8f389597-8511-4482-aabb-6d17eb7ccf3e" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Track Completed Exercises in Workout Diary" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="144e8365-1392-43dc-8866-3afb1fe7af02" LastKnownName="Track Completed Exercises in Workout Diary" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b19ac7f7-9bf4-4fc5-948e-89246f794695" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3fe0357c-6990-4c03-bdbe-85f270546fc2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bca3174-e84d-4abc-90b5-092627eecc96" name="Track Completed Exercises in Workout Diary" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="48227ccd-dba5-4e21-8343-d3a6dcc5f11f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2b5cb672-75c3-4d13-bdde-346031b85289" />
+          </association>
+          <association Id="403c6e45-3812-4a91-92fe-ed70efb8b0b2" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Plan Workout program in Workout Diary" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="932efcd2-1d7b-4d69-b595-9b822bd712f9" LastKnownName="Plan Workout program in Workout Diary" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9bfc2ba6-e6d8-4960-a0b1-39638d30d640" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d9db77ac-17e2-4679-9c00-8b5e7cdf2552" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="47ac8c98-dc35-4521-a5cd-34085b16af1f" name="Plan Workout program in Workout Diary" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6fa15b4e-162a-445d-ba38-1a8d2dd92d73" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3d10938d-6a51-45f1-96a6-0f85f694cc8e" />
+          </association>
+          <association Id="bc22d865-8e7b-4115-b546-eff9c0b383b9" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Create Goal" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dd6df8af-bfec-4f89-bcd4-68d9892325ce" LastKnownName="Create Goal" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e17aaee-7dd0-4a0a-ad15-14a3bd750a0d" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f7fae55c-7c53-4555-b3a0-9e048510eed5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0c0aca7c-25cf-42cb-a48f-dfead7a8ab78" name="Create Goal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1fbba6af-8ffd-41ea-9b6f-76efa462c833" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="593529b8-b353-431d-8e51-7827efb997ae" />
+          </association>
+          <association Id="7085775b-d16c-48f1-85ed-783b0c406de2" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="View Transaction History" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7d69eb64-5d59-4da3-bc61-70ddc7cdee01" LastKnownName="View Transaction History" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f51b0a36-3e39-49f4-9e74-09edf3f20b38" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3d65f7ae-4a34-4526-a1d7-e9a7959a2065" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="367fd4af-7f09-45b2-adff-64ad8fa100fb" name="View Transaction History" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="87cd8e37-518e-4a1a-8461-6882601a2fa6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4313fbad-eff5-489b-9178-f214ff63e809" />
+          </association>
+          <association Id="c84c5cb4-a6c8-4a9d-a83a-49f0d036b4a2" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Subscribe on trainer's program" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8f7ed1a2-cdfa-4a95-a7d9-bea6714f6901" LastKnownName="Subscribe on trainer's program" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac3abaaa-9bca-4b25-94da-5b9055f9b5d7" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b2a49fa-4142-4e1e-9d72-877a73d8a8f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f90f643-8659-4e4f-ab39-3297095937df" name="Subscribe on trainer's program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ec31939e-1865-4eb8-95c1-60ec03d5df4e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4060a30f-74f5-4c89-9b88-50e93e593f47" />
+          </association>
+          <association Id="846135dd-1820-4b99-bbf5-23a70742a4ba" isDerived="false" sourceEndRoleName="Registered User" targetEndRoleName="Search for fitness clubs" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8a3c0738-3841-4e74-bb1a-262ba3315e7c" LastKnownName="Search for fitness clubs" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b01c71c6-31ab-47b2-a726-0f0522054b12" name="Registered User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="923ec62c-cc40-4cab-9cbf-4f82824a451b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="41d28d9a-d4a8-4a79-a53c-6534366ea5a6" name="Search for fitness clubs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31e54bc9-48fc-4ef7-996b-037b62ac0153" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a65e9d5-2616-4df3-9574-aee7dbba56ab" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="eea2e620-95dd-40b9-a6ae-f2ff708618c2" name="Trainer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92d6273f-4bff-46f2-91c7-c4ef720be919" />
+        <targetEnds>
+          <association Id="874d905e-d5e5-490e-a6d2-54e7c589aefe" isDerived="false" sourceEndRoleName="Trainer" targetEndRoleName="Manage User " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c1c29189-3480-455d-aa70-96303a3cbae4" LastKnownName="Manage User " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5e8a9ec-6d02-4b06-8b62-5c10a0bbac8a" name="Trainer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1975bfe5-d41b-4715-a30c-ed81ea5f3966" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5cbdc14c-5327-4977-9718-4732936233a9" name="Manage User " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="700e251e-edb8-4a8d-9315-5d540121e729" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="69954b94-8371-478a-adca-7cb19f86c74d" />
+          </association>
+          <association Id="0a8d7c27-2b3b-4ad3-a33e-de16fe773be1" isDerived="false" sourceEndRoleName="Trainer" targetEndRoleName="Schedule sessions" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="39ec5967-0a29-4d63-8072-204f3e468922" LastKnownName="Schedule sessions" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f9ae87b2-8338-4099-9aee-c8d48195a085" name="Trainer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c208e463-7fd1-4b55-b789-62baef789574" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1b7d9d73-33aa-46f4-8107-43e83b5e6556" name="Schedule sessions" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7da933d9-0ec0-4a97-bc76-f478b96b0345" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="48942f8a-a9e2-44bb-ac9d-fd812e02ea73" />
+          </association>
+          <association Id="27e41a85-c359-455a-95fa-ccfab21432f5" isDerived="false" sourceEndRoleName="Trainer" targetEndRoleName="Create Event" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5af6854d-b64d-44d9-9fae-160995d8b8c7" LastKnownName="Create an Event" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="47c045fb-d1b6-4f9d-82ef-cd20368cf678" name="Trainer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="610d72d2-6446-4eda-9c63-f580058d04a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90e6852e-3780-41b1-bc95-b52e52df957a" name="Create Event" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="efab0600-7a90-4117-868d-ba935c3e2fff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2cc639a7-29b4-4582-aba6-6597d579ad13" />
+          </association>
+          <association Id="1ab0baba-c022-4554-82da-4d6adc144550" isDerived="false" sourceEndRoleName="Trainer" targetEndRoleName="Create workout program" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="01247c3b-a295-4ab2-8a48-ec464e512f3a" LastKnownName="Create workout program" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6c4ac4e-c360-4ff5-84df-ae40ddbfaab6" name="Trainer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4cb8304b-7221-42ba-b3a6-566b7214e34e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c6888fb9-3e41-4210-8f1f-a1db34172f14" name="Create workout program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="24043956-30b2-4b2c-9af2-6a5739473d60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b96dc54f-02dc-4f2d-acd1-60e55d0cf082" />
+          </association>
+          <association Id="32933aa6-1792-4449-b121-30f272e5ec15" isDerived="false" sourceEndRoleName="Trainer" targetEndRoleName="View Transaction History" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="879a88f8-60b4-445c-bfe4-be6d85c3fffe" LastKnownName="View Transaction History" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf5d2cdc-6660-4d78-8ed5-2d8d58c45f8f" name="Trainer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="db6e2e7a-79eb-4031-aa3e-c8a56bae2d70" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="344ab6d9-82ee-45f5-b5cf-9f3f9f252b3a" name="View Transaction History" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4c1f5b01-f9e3-4f2b-81ec-0d0d48b931d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="700729d7-8ec1-4d06-9f65-8b44b48743fc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0088b73a-75c2-4d20-a374-825bfe2304ef" name="Fitness Club" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9b99dcfd-315c-48a8-a29d-020ae3717276" />
+        <targetEnds>
+          <association Id="16e6af60-58f4-4e99-ae98-e98422f004be" isDerived="false" sourceEndRoleName="Fitness Club" targetEndRoleName="Create Event1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0a358c1c-e2a4-4ace-9571-75cb7abaccca" LastKnownName="Create an Event" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f15e2932-1cd5-4983-9efc-c4179aaa4906" name="Fitness Club" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="32dfd77f-572e-4731-9700-b665995185b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce3fe07d-5804-4237-8711-5a12da764aae" name="Create Event1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e71a3025-06fb-4ef3-9270-10db21cffe02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dee8c39f-1389-4726-8bce-7254dfc13b6a" />
+          </association>
+          <association Id="1ae19b91-1a49-4665-a184-ab3fea6091b3" isDerived="false" sourceEndRoleName="Fitness Club" targetEndRoleName="Send newsletter" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6a1cded4-0260-41e8-a551-946a0e19b955" LastKnownName="Send a newsletter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30388227-94e1-4f8e-8ed3-20c356ad3dbc" name="Fitness Club" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="db40ae82-51db-4953-a623-c0585e6e6d6e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="455dc6d5-62af-4c84-9505-19be057529be" name="Send newsletter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df760350-59fc-4fbf-9b30-345021bf836c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="29995a87-310c-4988-928f-b4e8eb0c004a" />
+          </association>
+          <association Id="bfe9306b-887e-41c5-83f6-19d5e9f27baf" isDerived="false" sourceEndRoleName="Fitness Club" targetEndRoleName="View Transaction History1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="21cc4cd1-012b-46aa-9129-ff0282c7a2f4" LastKnownName="View Transaction History" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e790392b-8d76-4dc5-8fea-e71531fac5c5" name="Fitness Club" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ecd037e6-6e64-42d8-9121-6e58b8dc825b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad75fd55-492c-4c5b-8b65-df6446f6be68" name="View Transaction History1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="10acd9dc-1717-4352-a39f-97153484fcf3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2856c018-ac63-4a47-aa5b-2a37266dc1d7" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7d629cb5-885b-4511-9221-5722beb894c7" name="Administrator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e373701a-0306-464c-be61-fa22f2a8d71a" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bc03e37e-c1b6-48b8-899c-6b7fb6c87f48" name="Register" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c301fd4b-bdfb-4a98-98cc-18e2472d2a66" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0733f018-04d0-4f15-bf87-126ebfa21e52" name="Register as Trainer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9d9404bf-ecb3-4e26-808f-0b881e7e286d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="773e42d6-0230-428d-bc46-1a2540f4da59" name="Register as Fitness Club" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="942b9bb5-6ee8-4859-b3ef-cc98bb0b8403" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c2023be2-547e-4716-a5ab-5df14b172859" name="Analyst" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5fce8baf-43bd-437e-be55-237925056129" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="648125d8-805a-42a5-ad18-94af8d57c5c3" name="Search for Events" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55d4f7e9-cd71-40b8-97d8-ada83b21d741" />
+        <additions>
+          <include Id="b9b9399f-32aa-4333-8e49-3245a06abd40">
+            <useCaseMoniker Id="8b7330ee-4cdf-4cec-8dd8-7904fe15d661" LastKnownName="View Event Details" />
+            <elementDefinition Id="81fb7455-c85c-4c6a-8230-01911e5389b8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e8016ca9-c6dd-4d56-a0fd-8164a07fdfab" name="Book Trainer Session" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09d8e251-b803-42a3-a410-89510f0d74f1" />
+        <additions>
+          <include Id="7e223fba-74a3-471c-ab2e-ce7be0be8309">
+            <useCaseMoniker Id="7c3103d0-04a0-414a-a7cb-1d733a193387" LastKnownName="Payment" />
+            <elementDefinition Id="4b9eca0d-b1ad-4a19-b804-b25868885083" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1e737d71-1962-494b-bd55-29ac8d538136" name="Search for Trainers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb132676-8769-4463-8ebd-bf9b4cc3fe95" />
+        <additions>
+          <include Id="f4487d2e-0a51-4b66-a83f-1c89d3e1ef57">
+            <useCaseMoniker Id="c65d3548-900f-4cd9-b165-949c0eff50d3" LastKnownName="View Trainer Details" />
+            <elementDefinition Id="5f39d413-f9e3-49ea-9fa3-e9eb4722a065" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c65d3548-900f-4cd9-b165-949c0eff50d3" name="View Trainer Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32561243-6809-4a53-a5a0-6267eb6a22a1" />
+        <additions>
+          <include Id="2b296401-f9c4-4f4a-8521-d044d3f0a537">
+            <useCaseMoniker Id="e8016ca9-c6dd-4d56-a0fd-8164a07fdfab" LastKnownName="Book Trainer Session" />
+            <elementDefinition Id="426506a5-80ac-4a3d-b8bf-33be4022ab91" />
+          </include>
+          <include Id="bf7b59a1-3938-446a-ba7b-22f9495d0415">
+            <useCaseMoniker Id="1c1deb85-1672-49b8-a035-b83e356f421a" LastKnownName="Chat with Trainer" />
+            <elementDefinition Id="71db22df-cd57-44be-a307-32f2ad66ba2d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8b7330ee-4cdf-4cec-8dd8-7904fe15d661" name="View Event Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ac55f51-1bbd-4461-87d8-70c5eb3d738d" />
+        <additions>
+          <include Id="eea87ead-030d-48ef-acf7-a7ad36d1bf7d">
+            <useCaseMoniker Id="8a315a60-6078-473e-9719-98bf77937b29" LastKnownName="Book an Event" />
+            <elementDefinition Id="9de82e3c-fb9d-4362-a2d5-54fdcd00843d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a315a60-6078-473e-9719-98bf77937b29" name="Book an Event" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a6eab4a-d58d-402e-948d-df95301f5a2d" />
+        <additions>
+          <include Id="c0f7407b-dcc6-46b7-878b-04746c981dd0">
+            <useCaseMoniker Id="7c3103d0-04a0-414a-a7cb-1d733a193387" LastKnownName="Payment" />
+            <elementDefinition Id="e2a87692-eb3f-4751-a234-ad20ad6a60da" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7c3103d0-04a0-414a-a7cb-1d733a193387" name="Payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2847a88-1cf3-4449-8a45-93acf79a344b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1c1deb85-1672-49b8-a035-b83e356f421a" name="Chat with Trainer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ee657a0a-1090-491d-9dba-2b0cb0fb9734" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7d69eb64-5d59-4da3-bc61-70ddc7cdee01" name="View Transaction History" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f6f9dc7-0689-4ea1-b815-fe397c567db8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8df1675b-39d4-4855-b32a-baffb48a8ded" name="Track Consumed Food in Food Diary" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d360ebdc-8f2d-4561-8e4d-4062e732f463" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2d6ed6a-18d3-40d5-ab50-f2fa58bdd655" name="Plan Food program in Food Diary" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5dc4ff2b-754b-49e1-b72a-64e7454d52ad" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="144e8365-1392-43dc-8866-3afb1fe7af02" name="Track Completed Exercises in Workout Diary" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4a32b639-db63-41b0-8e31-5dfe6ac2cd98" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="932efcd2-1d7b-4d69-b595-9b822bd712f9" name="Plan Workout program in Workout Diary" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8501919a-c5cc-4e50-8553-c270d26968af" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dd6df8af-bfec-4f89-bcd4-68d9892325ce" name="Create Goal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7dcc66b8-882d-4351-a468-6382116af845" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c1c29189-3480-455d-aa70-96303a3cbae4" name="Manage User " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="846cf574-38a2-4504-9032-56f7a5ae0ef7" />
+        <additions>
+          <include Id="7f166386-b2f3-4a90-9743-2a50b58ff2a4">
+            <useCaseMoniker Id="932efcd2-1d7b-4d69-b595-9b822bd712f9" LastKnownName="Plan Workout program in Workout Diary" />
+            <elementDefinition Id="b0d410d1-d7db-4482-bc2b-e3c60d7c59c0" />
+          </include>
+          <include Id="b097e815-9dc5-4f3b-99c2-239a29ee71db">
+            <useCaseMoniker Id="b2d6ed6a-18d3-40d5-ab50-f2fa58bdd655" LastKnownName="Plan Food program in Food Diary" />
+            <elementDefinition Id="449372fe-d527-4aa0-a0c1-f2271c776dd7" />
+          </include>
+          <include Id="4b30771b-2b08-4b46-be75-c3e8d58441ca">
+            <useCaseMoniker Id="dd6df8af-bfec-4f89-bcd4-68d9892325ce" LastKnownName="Create Goal" />
+            <elementDefinition Id="18cad754-2f0a-4754-a792-37363fad2391" />
+          </include>
+          <include Id="fd888ed7-9f22-4d86-ab7f-a65099dc3968">
+            <useCaseMoniker Id="1c1deb85-1672-49b8-a035-b83e356f421a" LastKnownName="Chat with Trainer" />
+            <elementDefinition Id="3d2bcbfb-2ce2-4fb9-988f-1d0cc628e07e" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8f7ed1a2-cdfa-4a95-a7d9-bea6714f6901" name="Subscribe on trainer's program" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6280b89c-0767-4383-98cf-54085cd4baa6" />
+        <additions>
+          <include Id="20754441-b551-41b7-8c92-6e93c50ce6f9">
+            <useCaseMoniker Id="7c3103d0-04a0-414a-a7cb-1d733a193387" LastKnownName="Payment" />
+            <elementDefinition Id="1ca49060-35ee-4519-858c-3cfac2c7403c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="39ec5967-0a29-4d63-8072-204f3e468922" name="Schedule sessions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4da2a1a5-143f-4ed1-bc14-126fa8023b27" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5af6854d-b64d-44d9-9fae-160995d8b8c7" name="Create an Event" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6db959db-30c4-4538-ad90-cb524fc484d1" />
+        <additions>
+          <include Id="193ef0e2-929f-45ad-be92-dd48f754372f">
+            <useCaseMoniker Id="7c3103d0-04a0-414a-a7cb-1d733a193387" LastKnownName="Payment" />
+            <elementDefinition Id="4a8f96cb-f093-4bfa-8fa4-4e9b317bc6b8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="01247c3b-a295-4ab2-8a48-ec464e512f3a" name="Create workout program" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32e57450-d703-42ae-8284-b382f191acb7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="879a88f8-60b4-445c-bfe4-be6d85c3fffe" name="View Transaction History" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e3b3edf-56de-455b-bd49-ec3a8f60c1fa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0a358c1c-e2a4-4ace-9571-75cb7abaccca" name="Create an Event" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c9d1699-e695-4fc2-bfb1-bc208c1c2337" />
+        <additions>
+          <include Id="0fec71f1-ded5-4f82-9013-01ec935e903d">
+            <useCaseMoniker Id="7c3103d0-04a0-414a-a7cb-1d733a193387" LastKnownName="Payment" />
+            <elementDefinition Id="23ccb596-edce-46a2-b56d-9caa09e33f08" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6a1cded4-0260-41e8-a551-946a0e19b955" name="Send a newsletter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d950faf-cfb8-4ac8-98d0-b6428bfa9bba" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a3c0738-3841-4e74-bb1a-262ba3315e7c" name="Search for fitness clubs" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60261548-4d64-4c6e-8cf2-3b25d6267ab3" />
+        <additions>
+          <include Id="3227e0be-244e-4dfd-b65c-13e0fa0f6d47">
+            <useCaseMoniker Id="bf018082-7c5a-456c-9aad-383e14c2c25f" LastKnownName="View Fitness Club Details" />
+            <elementDefinition Id="4590e3c4-d7bd-4aea-a21a-11ab0d318096" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2a36d8b-f0df-43f2-b3b9-20aa847758ce" name="Subscribe on fitness newsletter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e990c0f6-5c59-4265-ab8d-7b3242df52b2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bf018082-7c5a-456c-9aad-383e14c2c25f" name="View Fitness Club Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a88104b-1b50-43b7-a2fd-8655146766a6" />
+        <additions>
+          <include Id="342f4628-2777-4e36-bd68-b2e0f36efc16">
+            <useCaseMoniker Id="b2a36d8b-f0df-43f2-b3b9-20aa847758ce" LastKnownName="Subscribe on fitness newsletter" />
+            <elementDefinition Id="22603725-1c52-449a-b9cd-3e7ccb34ce62" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="21cc4cd1-012b-46aa-9129-ff0282c7a2f4" name="View Transaction History" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d8376282-9da5-417e-b7c6-4ab680d3e277" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="20785d70-5bc1-47de-9718-0577cf82833d" name="fitotrack.Models">
+    <elementDefinition Id="d4bc2b4b-8097-4ab7-8974-c59081326b67" />
+  </package>
+</useCaseModelRoot>

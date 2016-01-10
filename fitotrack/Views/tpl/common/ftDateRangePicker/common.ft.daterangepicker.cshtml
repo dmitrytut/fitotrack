@@ -1,0 +1,18 @@
+﻿
+<div class="date-choose-box ">
+    <div class="half-hor-spacer"></div>
+    <div class="calendar-small-icon"></div>
+    <input type="text" class="form-control"
+        data-ng-click="startPeriodOpen($event)"
+        data-ng-change="onPeriodDateSelect(true)"
+        max-date="Internal.datepickerOptions.maxDate"
+        data-datepicker-popup="{{appCfg.ddMMyyyyDotDateFormat}}"
+        data-ng-model="chosenPeriod.start"
+        data-is-open="Internal.isStartPeriodOpened"
+        data-ng-required="true"
+        readonly />
+    <div class="text-title">-</div>
+    <div class="calendar-small-icon"></div>
+    <input type="text" class="form-control"
+           data-ng-model="chosenPeriod.finish">
+</div>
