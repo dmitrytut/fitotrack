@@ -24,6 +24,32 @@ body.fttr{
 
 /***************/
 
+/**** MISC ****/
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.mt-3 {
+    margin-top: 3px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+/*****END*****/
+
 .fttr .nav.navbar-nav li > a{
 	color: #fff;
 	font-size: 120%;
@@ -765,7 +791,7 @@ body.fttr{
 	color: #27b261;
 }
 .fttr .secondary-information-panel .bottom-pane .burned-box{
-	width: 50%;
+	width: 100%;
 	position: relative;
 	float: left;
 	text-align: center;
@@ -1208,6 +1234,17 @@ body.fttr{
 .fttr .meals-list .meal-item .meal-name span{
 	font-size: 90%;
 }
+.fttr .meals-list .meal-item .meal-name{
+	position: relative;
+}
+.fttr .meals-list .meal-item .form-group {
+    margin-bottom: unset;
+}
+.fttr .meals-list .meal-item select {
+    margin-top: unset;
+}
+
+
 /* Exercise list
 ----------------------------------------------------------------------------------------------------------------------------------------------------*/
 .fttr .exercises-list .panel-body{
@@ -1771,7 +1808,7 @@ background: url('../img/nutrinion-icon.png') 15px center no-repeat;
 .fttr label{
 	font-weight: normal;
 	color: #677275;
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 }
 
 .fttr .radio,

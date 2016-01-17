@@ -7,7 +7,7 @@
             <!--ng-class="{ loading:form.submitting }"-->
             <div style="display:none" data-ng-init="setForm('generalInfoForm', generalInfoForm);"></div>
             <div class="row">
-                <label class="col-xs-2">Photo</label>
+                <label class="col-xs-2 control-label">Photo</label>
                 <div class="col-xs-6">
                     <ft-image-upload data-ng-model="Model.profile.general.userImagePath"
                                      data-gender="{{Model.profile.general.gender}}"
@@ -17,7 +17,7 @@
             <div class="half-hor-spacer"></div>
 
             <div class="row" data-ng-hide="true">
-                <label class="col-xs-2">Username</label>
+                <label class="col-xs-2 control-label mt-10">Username</label>
                 <div class="form-group col-xs-6">
                     <input class="form-control" placeholder="Username" data-ng-model="Model.profile.general.userName" readonly>
                 </div>
@@ -26,7 +26,7 @@
             <div class="half-hor-spacer"></div>
 
             <div class="row form-group" data-show-errors>
-                <label class="col-xs-2 control-label">Fullname</label>
+                <label class="col-xs-2 control-label mt-10">Fullname</label>
                 <div class="col-xs-6">
                     <input name="_p_g_fullName" type="text" class="form-control" placeholder="e.g. John Doe"
                            data-ng-model="Model.profile.general.fullName"
@@ -44,14 +44,14 @@
             <div class="half-hor-spacer"></div>
 
             <div class="row">
-                <label class="form-group col-xs-2">Birthday</label>
+                <label class="form-group col-xs-2 mt-15">Birthday</label>
                 <ft-birthday data-ng-model="Model.profile.general.birthday"></ft-birthday>
             </div>
 
             <div class="half-hor-spacer"></div>
 
             <div class="row">
-                <label class="col-xs-2">Gender</label>
+                <label class="col-xs-2 control-label mt-10">Gender</label>
                 <div class="form-group col-xs-6">
                     <div class="col-xs-3 radio">
                         <label>
@@ -82,7 +82,7 @@
             <div class="half-hor-spacer"></div>
 
             <div class="row form-group" data-show-errors>
-                <label class="col-xs-2 control-label">Location</label>
+                <label class="col-xs-2 control-label mt-10">Location</label>
                 <div class="col-xs-6">
                     <input name="_p_g_location" class="form-control" placeholder="e.g. London"
                            data-ng-model="Model.profile.general.location"

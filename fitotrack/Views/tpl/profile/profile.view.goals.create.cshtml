@@ -13,7 +13,7 @@
                     <form name="g_physicalinfoexForm" novalidate>
                         <div style="display:none" data-ng-init="setForm('g_physicalinfoexForm', g_physicalinfoexForm);"></div>
                         <div class="row form-group" data-show-errors>
-                            <label class="col-xs-3 control-label">Gender</label>
+                            <label class="col-xs-3 control-label mt-10">Gender</label>
                             <div class="col-xs-9">
                                 <div class="col-xs-3 radio">
                                     <label>
@@ -46,7 +46,7 @@
                         </div>
                         <div class="half-hor-spacer"></div>
                         <div class="row form-group" data-show-errors>
-                            <label class="col-xs-3 control-label">Current height</label>
+                            <label class="col-xs-3 control-label mt-10">Current height</label>
                             <div class="col-xs-9">
                                 <input name="_g_c_pi_height" type="text" class="form-control"
                                        style="width: 100px; float: left"
@@ -58,7 +58,7 @@
                         </div>
                         <div class="half-hor-spacer"></div>
                         <div class="row form-group" data-show-errors>
-                            <label class="col-xs-3 control-label">Current weight</label>
+                            <label class="col-xs-3 control-label mt-10">Current weight</label>
                             <div class="col-xs-9">
                                 <input name="_g_c_pi_weight" type="text"
                                        class="form-control"
@@ -71,7 +71,7 @@
                         </div>
                         <div class="half-hor-spacer"></div>
                         <div class="row form-group" data-show-errors>
-                            <label class="col-xs-3 control-label">Birthday</label>
+                            <label class="col-xs-3 control-label mt-10">Birthday</label>
                             <div class="col-xs-9">
                                 <ft-birthday data-ng-model="Model.physicalInfoEx.birthday"
                                              data-is-required="true" />
@@ -79,7 +79,7 @@
                         </div>
                         <div class="half-hor-spacer"></div>
                         <div class="row form-group" data-show-errors>
-                            <label class="col-xs-3 control-label">Activity Level</label>
+                            <label class="col-xs-3 control-label mt-10">Activity Level</label>
                             <div class="col-xs-9">
                                 <div class="radio">
                                     <label>
@@ -158,7 +158,7 @@
                     <form name="g_goalparamsForm" novalidate>
                         <div style="display:none" data-ng-init="setForm('g_goalparamsForm', g_goalparamsForm);"></div>
                         <div class="row form-group" data-show-errors>
-                            <label class="col-xs-3 control-label">Target type</label>
+                            <label class="col-xs-3 control-label mt-10">Target type</label>
                             <div class="col-xs-9">
                                 <div class="radio">
                                     <label>
@@ -209,7 +209,7 @@
                         <div class="half-hor-spacer"></div>
                         <div class="row form-group" data-show-errors 
                              data-ng-show="Model.goal.goalType != Model.GOAL_TYPES.MaintainWeight.value">
-                            <label class="col-xs-3 control-label">Target weight</label>
+                            <label class="col-xs-3 control-label mt-10">Target weight</label>
                             <div class="col-xs-9">
                                 <input type="text"
                                        class="form-control"
@@ -223,7 +223,7 @@
                         </div>
                         <div class="half-hor-spacer"></div>
                         <div class="row" data-ng-show="Model.goal.goalType != Model.GOAL_TYPES.MaintainWeight.value">
-                            <label class="col-xs-3">Intensity</label>
+                            <label class="col-xs-3 mt-10">Intensity</label>
                             <div class="col-xs-9">
                                 <div class="radio">
                                     <label>
@@ -272,28 +272,28 @@
                 </div>
                 <div data-ng-switch-when="g_results">
                     <div class="row">
-                        <label class="col-xs-5">Start weight</label>
+                        <label class="col-xs-5 control-label mt-10">Start weight</label>
                         <div class="col-xs-7">
                             <div class="target-weight-value"><span>{{Model.goal.startWeight}}</span> kg</div>
                         </div>
                     </div>
                     <div class="half-hor-spacer"></div>
                     <div class="row">
-                        <label class="col-xs-5">Goal weight</label>
+                        <label class="col-xs-5 control-label mt-10">Goal weight</label>
                         <div class="col-xs-7">
                             <div class="target-weight-value"><span>{{Model.goal.goalWeight}}</span> kg</div>
                         </div>
                     </div>
                     <div class="half-hor-spacer"></div>
                     <div class="row">
-                        <label class="col-xs-5">Recommended daily income</label>
+                        <label class="col-xs-5 control-label mt-10">Recommended daily income</label>
                         <div class="col-xs-7">
                             <div class="target-weight-value"><span>{{Model.goal.rde}}</span> kcal/day</div>
                         </div>
                     </div>
                     <div class="half-hor-spacer"></div>
                     <div class="row">
-                        <label class="col-xs-5">Estimated Finish Date</label>
+                        <label class="col-xs-5 control-label mt-10">Estimated Finish Date</label>
                         <div class="col-xs-7">
                             <div class="target-weight-value" data-ng-switch="Model.goal.estimatedFinishDate">
                                 <div ng-switch-when="null">

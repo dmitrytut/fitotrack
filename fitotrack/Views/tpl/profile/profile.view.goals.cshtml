@@ -17,35 +17,35 @@
             </div>
             <div class="half-hor-spacer"></div>
             <div class="row">
-                <label class="col-xs-5">Goal type</label>
+                <label class="col-xs-5 control-label mt-5">Goal type</label>
                 <div class="col-xs-7">
                     <div class="target-weight-value"><span>{{getGoalTypeTitle()}}</span></div>
                 </div>
             </div>
             <div class="half-hor-spacer"></div>
             <div class="row">
-                <label class="col-xs-5">Start weight</label>
+                <label class="col-xs-5 control-label mt-5">Start weight</label>
                 <div class="col-xs-7">
                     <div class="target-weight-value"><span>{{Model.profile.goal.startWeight}}</span> kg</div>
                 </div>
             </div>
             <div class="half-hor-spacer"></div>
             <div class="row">
-                <label class="col-xs-5">Goal weight</label>
+                <label class="col-xs-5 control-label mt-5">Goal weight</label>
                 <div class="col-xs-7">
                     <div class="target-weight-value"><span>{{Model.profile.goal.goalWeight}}</span> kg</div>
                 </div>
             </div>
             <div class="half-hor-spacer"></div>
             <div class="row">
-                <label class="col-xs-5">Goal RDI</label>
+                <label class="col-xs-5 control-label mt-5">Goal RDI</label>
                 <div class="col-xs-7">
                     <div class="target-weight-value"><span>{{Model.profile.goal.rde}}</span> kcal</div>
                 </div>
             </div>
             <div class="half-hor-spacer"></div>
             <div class="row">
-                <label class="col-xs-5">Estimated Finish Date</label>
+                <label class="col-xs-5 control-label mt-5">Estimated Finish Date</label>
                 <div class="col-xs-7">
                     <div class="target-weight-value" data-ng-switch="Model.profile.goal.estimatedFinishDate">
                         <div ng-switch-when="null">
@@ -57,6 +57,7 @@
                     </div>
                 </div>
             </div>
+            <div class="half-hor-spacer"></div>
             <div class="half-hor-spacer"></div>
             <div class="row">
                 <a data-ui-sref="profile.goals.create" class="col-xs-offset-5 btn btn-primary btn-lg">Change Goal</a>
