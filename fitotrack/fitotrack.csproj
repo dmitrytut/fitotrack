@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1494,6 +1495,7 @@
     <Content Include="Views\tpl\statistics\statistics.cardio.cshtml" />
     <Content Include="Views\tpl\statistics\statistics.all.cshtml" />
     <Content Include="Views\tpl\common\ftDateRangePicker\common.ft.daterangepicker.cshtml" />
+    <None Include="Properties\PublishProfiles\ft-web.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
