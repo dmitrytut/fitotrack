@@ -19,3 +19,8 @@ Fitotrack is a system which helps you to:
   your body parameters and estimate approximate date for achieving the goal.
   
 * Watch and analize statistics.
+
+
+Demo site:
+
+http://dmitrytut-001-site1.btempurl.com/
