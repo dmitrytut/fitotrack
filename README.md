@@ -21,6 +21,10 @@ Fitotrack is a system which helps you to:
 * Watch and analize statistics.
 
 
+Used technologies:
+
+ASP.Net MVC/Web Api, AngularJS, Entity Framework, MS SQL etc.
+
 Demo site:
 
 http://dmitrytut-001-site1.btempurl.com/
