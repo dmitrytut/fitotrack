@@ -25,6 +25,16 @@ Used technologies:
 
 ASP.Net MVC/Web Api, AngularJS, Entity Framework, MS SQL etc.
 
+
+*** Deployment
+
+1. Publish code to your webserver.
+2. Create MSSql database, then make initial EF migrations. 
+3. Edit connection strings in the ```web.config``` file.
+4. That's it!
+
+
 Demo site:
 
-http://dmitrytut-001-site1.btempurl.com/
+http://dmitrytut-001-site1.btempurl.com/      (Permanently unavaible)
+
