@@ -31,7 +31,7 @@ ASP.Net MVC/Web Api, AngularJS, Entity Framework, MS SQL etc.
 1. Publish code to your webserver.
 2. Create MSSql database, then make initial EF migrations. 
 3. Edit connection strings in the ```web.config``` file.
-4. Register FatSecret api site: http://platform.fatsecret.com/api/
+4. Register on the FatSecret api site: http://platform.fatsecret.com/api/
 4. Set `ConsumerKey` and `ConsumerSecret` in the ```fitotrack/api/FatSecretAPI/FatSecretAPI.cs``` with values from the step above.
 5. That's it!
 
